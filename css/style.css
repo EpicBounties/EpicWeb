@@ -966,6 +966,50 @@ footer{
 ========================*/
 
 
+
+/*=====================
+   legal
+========================*/
+
+.legal {
+  padding-top: 12em;
+  padding-bottom: 8em;
+}
+
+.legal h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.legal h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.legal h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.legal h5 {
+  padding-top: 10px;
+  font-size: 17px;
+  padding-bottom: 5px;
+}
+
+.legal li {
+  padding-bottom: 5px;
+}
+
+.legal p {
+  padding-bottom: 10px;
+}
+
+/*=====================
+   legal End
+========================*/
+
+
 #button {
   display: inline-block;
   background-color: #FF9800;
