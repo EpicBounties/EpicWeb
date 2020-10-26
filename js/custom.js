@@ -65,6 +65,10 @@ var lastId,
     topMenuHeight = topMenu.outerHeight()+15,
     // All list items
     menuItems = topMenu.find("a"),
+
+    // Get button
+    btn_get = $(".btn_get")
+
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));
@@ -74,6 +78,17 @@ var lastId,
 // Bind click handler to menu items
 // so we can get a fancy scroll animation
 menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 300);
+  e.preventDefault();
+});
+
+// Bind click handler to get button
+// so we can get a fancy scroll animation
+btn_get.click(function(e){
   var href = $(this).attr("href"),
       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
   $('html, body').stop().animate({ 
