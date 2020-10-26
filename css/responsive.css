@@ -91,12 +91,13 @@
 	.carousel-caption {
 	    right: unset;
 	    left: 15px;
-	    padding-bottom: 30px;
+	    padding: 30px;
 	    text-align: left;
 	    bottom: unset;
 	    top: 60%;
 	    transform: translateY(-60%);
-	    width: 85%;
+		width: 85%;
+		background-color: rgba(25, 25, 25, 0.8);;
 	}
 	.carousel-caption h1 {
 	    color: #fff;
