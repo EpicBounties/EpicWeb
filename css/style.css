@@ -972,8 +972,8 @@ footer{
 ========================*/
 
 .legal {
-  padding-top: 12em;
-  padding-bottom: 8em;
+  padding-top: 170px;
+  margin-bottom: 100px;
 }
 
 .legal h2 {
@@ -981,12 +981,7 @@ footer{
   padding-bottom: 20px;
 }
 
-.legal h3 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.legal h4 {
+.legal h3, .legal h4 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -1009,6 +1004,13 @@ footer{
    legal End
 ========================*/
 
+footer.forms {
+  margin-top: 100px;
+}
+
+.form-body {
+  padding-top: 170px;
+}
 
 #button {
   display: inline-block;

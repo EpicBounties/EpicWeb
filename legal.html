@@ -694,16 +694,15 @@
     <script src="js/tilt.jquery.js"></script>
 
     <script>
+        document.getElementById("navv").style.backgroundColor = "#192633";
+
         // When the user scrolls down 50px from the top of the document, resize the header's font size
         window.onscroll = function () { scrollFunction() };
-
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
                 document.getElementById("header").style.top = "0px";
-                document.getElementById("navv").style.backgroundColor = "#192633";
             } else {
                 document.getElementById("header").style.top = "20px";
-                document.getElementById("navv").style.backgroundColor = "transparent";
             }
         }
     </script>
