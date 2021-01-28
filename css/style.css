@@ -7,6 +7,16 @@
 }
 
 @font-face{
+  src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+  font-family: WorkSans;
+}
+
+@font-face{
+  src: url(../fonts/EncodeSans-VariableFont_wdth,wght.ttf);
+  font-family: EncodeSans;
+}
+
+@font-face{
   src: url(../fonts/Rajdhani-Bold.ttf);
   font-family: Rajdhani-Bold;
 }
@@ -84,7 +94,11 @@ li{
 }
 h1, h2, h3, h4, h5, h6{
   margin: 0px;
+  font-family: EncodeSans !important;
   padding: 0px;
+}
+body{
+  font-family: WorkSans !important;
 }
 p{
   padding: 0px;
@@ -165,7 +179,7 @@ header{
   padding: 0px 15px;
 }
 .navbar-inverse .navbar-nav>li>a{
-    font-family: Rajdhani-Medium;
+    font-family: WorkSans;
     font-size: 16px;
     color: #fff;
     padding: 10px 0px;
@@ -180,7 +194,12 @@ header{
 .navbar{
   padding: 5px 0px;
 }
-
+.mt-20{
+  margin-top: 20px;
+}
+a{
+  font-family: WorkSans;
+}
 /*===================
     Header End
  ====================*/
@@ -198,12 +217,12 @@ header{
     bottom: unset;
     top: 52%;
     transform: translateY(-50%);
-    width: 25%;
+    width: 60%;
 }
 .carousel-caption h1{
   color: #fff;
   text-transform: uppercase;
-  font-family: Rajdhani-Bold;
+  font-family: EncodeSans;
   font-size: 48px;
   position: relative;
   padding-bottom: 60px;
@@ -218,9 +237,17 @@ header{
   bottom: 30px;
 }
 .carousel-caption p{
-  color: #cacaca;
-  font-family: Rajdhani-Regular;
-  font-size: 18px;
+  color: #fff;
+  font-family: WorkSans;
+  font-size: 20px;
+}
+
+.our-team .cnt-block p {
+    color: #fff !important;
+    font-family: WorkSans;
+    font-size: 18px !important;
+    width: 95%;
+    padding-top: 10px;
 }
 
 /*===================
@@ -281,14 +308,14 @@ header{
 }
 
 .main_header h4{
- font-family: Rajdhani-SemiBold;
+ font-family: EncodeSans;
   color: #fff;
   text-transform: uppercase;
 }
 .main_header h1{
   color: #fff;
   text-transform: uppercase;
-  font-family: Oswald-Stencil;
+  font-family: EncodeSans;
   text-shadow: 0 0 40px #00aeef;
   display: inline-block;
   position: relative;
@@ -501,7 +528,7 @@ header{
 
 .leader_header h1{
   color: #fff;
-  font-family: Rajdhani-SemiBold;
+  font-family: EncodeSans;
   text-transform: uppercase;
   text-shadow: 0 0 40px #0072bc;
   padding: 100px 0px;
@@ -692,7 +719,7 @@ header{
 .ranking_area ul li:nth-child(4){
   width: auto;
   padding-left: 25px;
-  font-family: Rajdhani-Regular;
+  font-family: WorkSans;
 }
 .ranking_area.ranikng_edit{
   box-shadow: none;
@@ -758,7 +785,7 @@ padding-top: 120px;
     
 .companies_header h1{
   color: #fff;
-  font-family: Rajdhani-SemiBold;
+  font-family: EncodeSans;
   text-transform: uppercase;
       text-shadow: 0 0 40px #00aeef;
   margin: 20px 0px;
@@ -766,7 +793,7 @@ padding-top: 120px;
 .companies_header p{
   font-size: 16px;
   color: #fff;
-   font-family: Rajdhani-Regular;
+   font-family: WorkSans;
 }
 .companies .thumbnail{
   border-radius: 0px;
@@ -780,7 +807,7 @@ padding-top: 120px;
     top: -75px;
     color: #fff;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 20px;
     font-family: Rajdhani-SemiBold;
     text-shadow: 0 0 40px #00aeef;
 }
@@ -797,7 +824,7 @@ padding-top: 120px;
 .companies .thumbnail p{
   font-size: 18px;
   color: #fff;
-   font-family: Rajdhani-Regular;
+   font-family: WorkSans;
 }
 .companies .btn_div {
     margin: 100px 0px 50px;
@@ -842,7 +869,7 @@ padding-top: 120px;
 }
 .work_text {
     width: 50%;
-    padding-top: 100px;
+    padding-top: 20px;
     margin-bottom: 150px;
 }
 .work_text h3{
@@ -851,19 +878,23 @@ padding-top: 120px;
 }
 .work_text h2{
   color: #fff;
-  font-family: Rajdhani-SemiBold;
+  font-family: WorkSans;
   margin: 20px 0px;
 }
 .work_text p{
   color: #fff;
-   font-family: Rajdhani-Regular;
+   font-family: WorkSans !important;
    font-size: 18px;
 }
 
 .how_woek .btn_div{
   padding-top: 70px;
-  padding-bottom: 120px;
+  padding-bottom: 70px;
 }
+.margin_60{
+  margin-bottom: 60px !important;
+}
+
 .work_img img {
     position: absolute;
     /*top: -115px;*/
@@ -901,7 +932,7 @@ footer{
 }
 .footer_content ul li a {
     color: #5e6b6e;
-    font-family: Rajdhani-Regular;
+    font-family: WorkSans;
     font-size: 18px;
     padding: 15px 0px;
     display: inline-block;
@@ -929,7 +960,7 @@ footer{
 .social p{
   float: right;
   padding-top: 10px;
-  font-family: Rajdhani-Regular;
+  font-family: WorkSans;
    color: #5e6b6e;
    font-size: 16px;
 
@@ -955,7 +986,7 @@ footer{
   opacity: 0.5;
 }
 .copy{
-  font-family: Rajdhani-Regular;
+  font-family: WorkSans;
    color: #5e6b6e;
    font-size: 14px;
    position: absolute;
@@ -1048,6 +1079,172 @@ footer.forms {
   opacity: 1;
   visibility: visible;
 }
+.custom-button-bg{
+  background-image: url(../images/button_bg.png);
+  background-size: 100% 90px;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-family: WorkSans;
+}
+.custom-button-bg:hover{
+   color: #fff;
+} 
+video {
+    width: 100%;
+}
+.our_partners .row img {
+    max-width: 200px;
+    width: 100%;
+}
+.our_partners .row {
+    display: flex;
+    justify-content: space-between;
+}
+section#partners {
+    position: relative;
+    background-image: url('../images/partner_banner.png');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    border-bottom: 2px solid #464b65;
+    padding: 40px;
+}
+section#partners .col-md-12.col-sm-12.col-xs-12 {
+    display: flex;
+    justify-content: center;
+}
+.row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.heading.heading-icon {
+    display: block;
+}
+.padding-lg {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+.practice-area .inner{ 
+     border:1px solid #999999; 
+   text-align:center; 
+   margin-bottom:28px; 
+   padding:40px 25px;
+}
+.our-webcoderskull .cnt-block:hover {
+ }
+.practice-area .inner h3{ 
+    color:#3c3c3c; 
+  font-size:24px; 
+  font-weight:500;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 0;
+}
+.practice-area .inner p{ 
+    font-size:14px; 
+  line-height:22px; 
+  font-weight:400;
+}
+.practice-area .inner img{
+  display:inline-block;
+}
+
+
+.our-team{
+  background: linear-gradient(45deg, #105585, #1b1b40);
+  border-bottom: 2px solid #464b65;
+ }
+.our-team .cnt-block{ 
+   float:left; 
+   width:100%; 
+   background:transparent; 
+   padding:30px 20px; 
+   text-align:center; 
+   box-shadow: inset 0 0 20px rgb(18 139 185 / 0.8);
+   margin: 0 0 28px;
+}
+.our-team .cnt-block figure{
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+   display:inline-block;
+   margin-bottom: 15px;
+}
+.our-team .cnt-block img{ 
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+}
+.our-team .cnt-block h3{ 
+   color:#2a2a2a; 
+   font-size:20px; 
+   font-weight:500; 
+   padding:6px 0;
+   text-transform:uppercase;
+}
+.our-team .cnt-block h3 a{
+  text-decoration:none;
+  color:#fff;
+}
+.our-team .cnt-block h3 a:hover{
+  color:#ddd;
+}
+.our-team .cnt-block p{ 
+   color:#2a2a2a; 
+   font-size:13px; 
+   line-height:20px; 
+   font-weight:400;
+}
+.our-team .cnt-block .follow-us{
+  margin:20px 0 0;
+}
+.our-team .cnt-block .follow-us li{ 
+  display:inline-block; 
+  width:auto; 
+  margin:0 5px;
+}
+.our-team .cnt-block .follow-us li .fa{ 
+   font-size:24px; 
+   color:#767676;
+}
+.our-team .cnt-block .follow-us li .fa:hover{ 
+   color:#025a8e;
+}
+#team-member h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+ 
+
+.navbar-inverse .navbar-collapse .navbar-nav>.active>a,
+ .navbar-inverse .navbar-collapse .navbar-nav>.active>a:focus, 
+ .navbar-inverse .navbar-collapse .navbar-nav>.active>a:hover{
+    color: #fff !important;
+}
+ 
+
 @media (min-width: 500px) {
   #button {
     margin: 30px;
@@ -1058,4 +1255,24 @@ footer.forms {
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
   background-color: transparent;
   color: #34a8c0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  
+  .navbar-inverse .navbar-nav > li {
+      padding: 0px 5px;
+  }
+    
+  .carousel-caption {
+      right: unset;
+      left: 5%;
+      padding-bottom: 30px;
+      text-align: left;
+      bottom: unset;
+      top: 75%;
+      transform: translateY(-60%);
+      width: 80%;
+  }
+    
+    
 }

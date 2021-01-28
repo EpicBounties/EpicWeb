@@ -3,6 +3,17 @@
 
 
 @media only screen and (max-width: 767px){
+  
+  
+  .how_woek .btn_div {
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+  
+  .our-team .cnt-block p {
+      font-size: 14px !important;
+  }
+  
 	header{
 		position: static;
 	}
@@ -90,13 +101,13 @@
 	}
 	.carousel-caption {
 	    right: unset;
-	    left: 15px;
+	    left: 10%;
 	    padding: 30px;
 	    text-align: left;
 	    bottom: unset;
 	    top: 60%;
 	    transform: translateY(-60%);
-		width: 85%;
+		width: 80%;
 		background-color: rgba(25, 25, 25, 0.8);;
 	}
 	.carousel-caption h1 {
@@ -109,7 +120,7 @@
 	}
 	.carousel-caption p {
 	    color: #cacaca;
-	    font-family: Rajdhani-Regular;
+	    
 	    font-size: 14px;
 	}
 	.carousel-caption h1:before {
@@ -127,6 +138,7 @@
 	.want_to h2 {
 	    text-align: center;
 	    font-size: 22px;
+      padding: 10px 0px;
 	}
 	.want_to img {
 	    margin: 20px auto 30px;
@@ -136,7 +148,7 @@
 	    background: linear-gradient(45deg, #105585, #1b1b40);
 	    position: relative;
 	    width: 100%;
-	    padding: 60px 0px 20px;
+	    padding: 20px 0px 20px;
 	}
 	.infamous {
 	    background: linear-gradient(45deg, #105585, #1b1b40);
@@ -158,18 +170,18 @@
     margin-bottom: 15px;
 	}
 	.info_bg .table h4 {
-	    font-family: Rajdhani-Regular;
+	    
 	    color: #fff;
 	    padding-top: 0;
 	}
 	/*.info_bg .table h4 {
-	    font-family: Rajdhani-Regular;
+	    
 	    color: #fff;
 	    padding-top: 0;
 	    font-size: 16px;
 	}*/
 	.info_bg .table h4 {
-	    font-family: Rajdhani-Regular;
+	    
 	    color: #fff;
 	    padding-top: 0;
 	    font-size: 14px;
@@ -196,7 +208,7 @@
 	    font-size: 28px;
 	}
 	.leader_text h3 {
-	    font-family: Rajdhani-Regular;
+	    
 	    color: #fff;
 	    font-size: 18px;
 	}
@@ -290,9 +302,9 @@
 	    transform: translateX(-50%);
 	}
 	.companies .thumbnail p {
-	    font-size: 12px;
+	    font-size: 14px;
 	    color: #fff;
-	    font-family: Rajdhani-Regular;
+	    
 	}
 	.companies .thumbnail h4 {
 	    position: relative;
@@ -305,6 +317,7 @@
 	}
 	.companies .btn_div {
 	    margin: 0px 0px;
+      margin-bottom: 40px;
 	}
 	.companies_ul {
 	    margin: 0px 0px 20px;
@@ -336,18 +349,25 @@
 	}
 	.work_text p {
 	    color: #fff;
-	    font-family: Rajdhani-Regular;
+	    
 	    font-size: 14px;
 	}
 	.work_text h3 {
 	    color: #fff;
-	    font-family: Rajdhani-Regular;
+	    
 	    font-size: 20px;
 	}
 	
 	.work_right .work_text {
 	    float: none;
 	}
+  
+.work_img.col-md-6 {
+  margin: 20px 0px;
+}
+  .work_right .margin_60 {
+    margin-bottom: 0px !important;
+  }
 	.how_woek{
 		padding-bottom: 20px;
 	}
@@ -364,7 +384,7 @@
 	}
 	.footer_content ul li a {
 	    color: #5e6b6e;
-	    font-family: Rajdhani-Regular;
+	    
 	    font-size: 14px;
 	    padding: 5px 0px;
 	    display: inline-block;
@@ -380,7 +400,7 @@
 	.social p {
 	    float: none;
 	    padding-top: 10px;
-	    font-family: Rajdhani-Regular;
+	    
 	    color: #5e6b6e;
 	    font-size: 14px;
 	    text-align: center;
@@ -415,7 +435,7 @@
 		display: block;
 	}
 	.copy_2 .copy {
-	    font-family: Rajdhani-Regular;
+	    
 	    color: #5e6b6e;
 	    font-size: 16px;
 	    position: relative;
@@ -426,6 +446,20 @@
 	}
 	.navbar{
 	  padding: 0px 0px;
+	}
+	ul#mainmenu li:last-child {
+	   margin: auto;
+	}
+	.carousel-inner .item img {
+	    height: 489px;
+	}
+	section#partners .col-md-12.col-sm-12.col-xs-12 {
+ 	    flex-wrap: wrap;
+	}
+ 
+	section#partners .col-md-12.col-sm-12.col-xs-12 .col-md-2 {
+	    margin: 10px;
+	    text-align: center;
 	}
 }
 
@@ -452,13 +486,13 @@
 	    margin-left: 10px;
 	}
 	.navbar-inverse .navbar-nav>li>a{
-		font-size: 14px;
+		font-size: 13px;
 		/*padding-left: 8px;
 		padding-right: 8px;*/
 	}
 	.navbar-inverse .navbar-nav>li {
-	    padding-left: 8px;
-	    padding-right: 8px;
+	    padding-left: 4px;
+	    padding-right: 4px;
 	}
 	.btn_get img{
 		width: 150px;
@@ -547,11 +581,18 @@
 		padding: 10px;
 	}
 	.companies .thumbnail h4{
-		font-size: 20px;
+font-size: 14px;
+line-height: 20px;
+margin-top: 14px;
 	}
 	.companies .thumbnail p{
 		font-size: 14px;
 	}
+  
+#partners img {
+    width: 100%;
+}
+  
 	.work_header h1{
 		padding-bottom: 0px;
 	}
@@ -569,14 +610,14 @@
 	}
 	.footer_content ul li a {
 	    color: #5e6b6e;
-	    font-family: Rajdhani-Regular;
+	    
 	    font-size: 16px;
 	    padding: 10px 0px;
 	    display: inline-block;
 	    transition: 0.3s;
 	}
 	.copy {
-	    font-family: Rajdhani-Regular;
+	    
 	    color: #5e6b6e;
 	    font-size: 14px;
 	    position: absolute;
@@ -591,10 +632,21 @@
 	    padding-bottom: 30px;
 	    text-align: left;
 	    bottom: unset;
-	    top: 60%;
-	    transform: translateY(-60%);
-	    width: 50%;
+	    top: 75%;
+	    transform: translateY(-75%);
+	    width: 75%;
 	}
+  
+.work_text {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.work_div {
+    display: flex;
+    align-items: center;
+}
+  
+  
 	.info_bg{
 		padding: 50px 20px;
 	}
@@ -701,9 +753,9 @@
     padding-bottom: 30px;
     text-align: left;
     bottom: unset;
-    top: 60%;
+    top: 75%;
     transform: translateY(-60%);
-    width: 40%;
+    width: 80%;
 }
 }
 /*===============================
@@ -712,7 +764,7 @@
 
 
 
-
+ 
 @media only screen and (min-width: 1024px)and (max-width: 1200px){
 	
 }
@@ -721,7 +773,11 @@
 =================================*/
 
 
-
+@media only screen and (min-width: 1180px){
+	section#partners .col-md-12.col-sm-12.col-xs-12 .col-md-2 {
+	    width: 21%;
+	}
+}
 
 @media only screen and (min-width: 1600px){
 	.carousel-inner>.item>img{
@@ -730,6 +786,7 @@
 	.carousel-caption{
 		left: 15%;
 	}
+ 
 }
 
 @media only screen and (min-width: 1024px){
@@ -738,7 +795,7 @@
 	}
 	.work_text p {
 	    color: #fff;
-	    font-family: Rajdhani-Regular;
+	    
 	    font-size: 20px;
 	    width: 95%;
 	}
@@ -755,19 +812,17 @@
 	    margin-bottom: 150px;
 	}*/
 	.work_div:nth-child(1){
-		width: 85%;
+		width: 100%;
 		margin: 0px auto;
 	}
 	.work_div:nth-child(3){
-		width: 85%;
+		width: 100%;
 		margin: 0px auto;
 	}
 	.work_div:nth-child(1) img, .work_div:nth-child(3) img{
 		right: 10%;
 	}
-	.work_div:nth-child(4) img{
-		left: 10%;
-	}
+	 
 	.social p {
 	    font-size: 14px;
 	    margin-right:20%;
