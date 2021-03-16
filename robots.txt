@@ -1,0 +1,4 @@
+# Dejo pasar a todos los robots
+
+User-agent: *
+Disallow:
