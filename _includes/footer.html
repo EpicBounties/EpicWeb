@@ -1,0 +1,98 @@
+<!--=====================
+   footer
+========================-->
+
+<footer {% if page.name contains "formulario" %}class="forms"{% endif %}>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <img src="images/footer_logo.png" alt="" class="footer_logo">
+        <p class="copy">Copyright &copy;2021 Epic Bounties</p>
+      </div>
+      <div class="col-md-9 col-sm-9 col-xs-12 footer_content">
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <h2>empresas</h2>
+          <ul>
+            <li><a href="formulario-empresas.html" target="_blank">Regístrate ahora</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <h2>comunidad</h2>
+          <ul>
+            <li><a href="formulario-hunters.html" target="_blank">Únete ahora</a></li>
+            <li><a href="https://t.me/joinchat/AKWAVhs1zLi_RWcLaSIiiw" target="_blank">Telegram</a>
+            <li><a href="https://discord.gg/eVDzZjTEfb" target="_blank">Discord</a></li>
+            <li><a href="https://www.youtube.com/channel/UCTrE5C3LHstzzDLHhUNSwTw" target="_blank">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <h2>Dirección y Contacto</h2>
+          <ul>
+            <li><a >Calle Compositor Lehmberg Ruiz, 13, 29007 Málaga</a></li>
+            <li><a >comunidad@epicbounties.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6 social">
+          <ul class="">
+
+            <li><a href="https://twitter.com/epicbounties" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/67341771/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCTrE5C3LHstzzDLHhUNSwTw" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-8 col-sm-8 col-xs-6">
+          <ul  style="padding-top: 5px;">
+            <li><a href="legal.html" target="_blank">Aviso Legal, Política de Privacidad y Cookies.</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12 copy_2">
+        <p class="copy">Copyright &copy;2021 Epic Bounties</p>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<!--=====================
+   footer End
+========================-->
+
+
+  <!--<a id="button"></a>
+  <div id="preloader">
+       <div class="loadpad">
+         <img src="images/apple-touch-icon.png" alt="">
+       </div>
+
+         <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+    </div>-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/tilt.jquery.js"></script>
+
+  <script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+      document.getElementById("header").style.top = "0px";
+      document.getElementById("navv").style.backgroundColor = "#192633";
+    } else {
+      document.getElementById("header").style.top = "20px";
+      document.getElementById("navv").style.backgroundColor = "transparent";
+    }
+  }
+  </script>
+</body>
+</html>
