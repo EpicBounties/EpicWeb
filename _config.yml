@@ -19,7 +19,8 @@ strict_front_matter : false
 
 # For RSS
 plugins:
-  - jekyll-feed # Documentation: https://github.com/jekyll/jekyll-feed
+  - jekyll-feed
+  - jekyll-sitemap
   
 feed:
   path: feed.xml
