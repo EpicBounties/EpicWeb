@@ -67,10 +67,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <li><a href="formulario-hunters.html">Comunidad</a></li>
                             <li><a href="formulario-empresas.html">Empresas</a></li>
                             <li><a href="formulario-empresas.html">MSSPs </a></li>
-                            <li><a href="index.html#works">Cómo funciona</a></li>
-                            <li><a href="index.html#companies">Beneficios </a></li>
-                            <!-- <li><a href="index.html#partner">Partners</a></li>
-                            <li><a href="index.html#team-member">Nosotros</a></li>-->
+                            <li><a href="{% if page.name != "index.html" %}index.html{% endif %}#works">Cómo funciona</a></li>
+                            <li><a href="{% if page.name != "index.html" %}index.html{% endif %}#companies">Beneficios </a></li>
+                            <!-- <li><a href="{% if page.name != "index.html" %}index.html{% endif %}#partner">Partners</a></li>
+                            <li><a href="{% if page.name != "index.html" %}index.html{% endif %}#team-member">Nosotros</a></li>-->
                         </ul>
 
                     </div>
