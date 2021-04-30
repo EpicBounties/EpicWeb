@@ -21,5 +21,5 @@ strict_front_matter : false
 plugins:
   - jekyll-feed # Documentation: https://github.com/jekyll/jekyll-feed
   
-# feed:
-#   path: atom.xml
+feed:
+  path: feed.xml
