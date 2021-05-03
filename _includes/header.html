@@ -38,7 +38,7 @@
 
 </head>
 
-<body {% if page.name contains "formulario" %}class="form-body"{% endif %}>
+<body {% if page.name contains "formulario" or page.url contains "/blog/" %}class="form-body"{% endif %}>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDMS4FK"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
