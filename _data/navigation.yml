@@ -1,0 +1,20 @@
+docs_list_title: Site main menu
+docs:
+
+- title: Comunidad
+  url: formulario-hunters.html
+
+- title: Empresas
+  url: formulario-empresas.html
+
+- title: MSSPs
+  url: formulario-empresas.html
+
+- title: Cómo funciona
+  url: "#works"
+
+- title: Beneficios
+  url: "#companies"
+
+- title: Blog
+  url: blog/
