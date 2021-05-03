@@ -1,15 +1,15 @@
 ---
     layout: default
 ---
-<div class="blog-body">
+<div class="container">
     <h1>{{ page.title }}</h1>
-    <p>{{ page.date | date_to_string }} - {{ page.category | capitalize }}</p>
+    <p style="margin: 1rem 0;">{{ page.date | date_to_string }} - <a href="/blog/categories/{{ page.category | slugify }}">{{ page.category | capitalize }}</a></p>
 
     {{ content }}
-
-    <ul>
+    <ul class="list-inline" style="margin: 1rem 0;">
+        <p style="display: inline-block;">Tags:</p>
         {% for tag in page.tags %}
-        <li><a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a></li>
+        <li class="list-inline-item"><a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a></li>
         {% endfor %}
     </ul>
 </div>
