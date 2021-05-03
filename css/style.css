@@ -400,7 +400,8 @@ a {
     position: relative;
 }
 
-.info_bg .table img {}
+
+/* .info_bg .table img {} */
 
 .more_img {
     -webkit-transition: all 0.3s;
@@ -1154,6 +1155,20 @@ footer {
    legal End
 ========================*/
 
+
+/*=====================
+   blog
+========================*/
+
+.blog-body {
+    padding: 0 50px;
+}
+
+
+/*=====================
+   blog End
+========================*/
+
 footer.forms {
     margin-top: 100px;
 }
@@ -1288,7 +1303,8 @@ ul {
     padding: 40px 25px;
 }
 
-.our-webcoderskull .cnt-block:hover {}
+
+/* .our-webcoderskull .cnt-block:hover {} */
 
 .practice-area .inner h3 {
     color: #3c3c3c;
