@@ -1,6 +1,9 @@
 docs_list_title: Site main menu
 docs:
 
+# - title: Webinar
+#   url: formulario-webinar.html
+
 - title: Comunidad
   url: formulario-hunters.html
 
@@ -15,6 +18,12 @@ docs:
 
 - title: Beneficios
   url: "#companies"
+
+# - title: Partners
+#   url: "#partner"
+
+# - title: Nosotros
+#   url: "#team-member"
 
 - title: Blog
   url: blog/
