@@ -38,11 +38,9 @@ collections:
 category_path       : blog/categories
 category_layout     : category.html
 
+tag_feed_dir        : blog/tags
 tag_page_dir        : blog/tags
 tag_page_layout     : tag
-
-tag_feed_layout     : tag_feed
-tag_feed_dir        : tag
 
 # Outputting
 paginate            : 5
