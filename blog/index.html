@@ -7,12 +7,12 @@
     <h1>News</h1>
     <ul class="nav nav-pills" id="news-tabs">
         <li class="nav-item">
-            <a class="nav-link active" href="/blog">All posts</a>
+            <a class="nav-link active" href="/EpicWeb/blog">All posts</a>
         </li>
         {% assign sorted_cats = site.categories | sort %}
         {% for category in sorted_cats %}
         <li class="nav-item">
-            <a class="nav-link" href="/blog/categories/{{ category | first | slugify }}">{{ category | first | capitalize }}</a>
+            <a class="nav-link" href="/EpicWeb/blog/categories/{{ category | first | slugify }}">{{ category | first | capitalize }}</a>
             </li>
         {% endfor %}
     </ul>
