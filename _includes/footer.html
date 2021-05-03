@@ -6,21 +6,21 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-3 col-xs-12">
-        <img src="/images/footer_logo.png" alt="" class="footer_logo">
+        <img src="{{ "/images/footer_logo.png" | prepend: site.baseurl }}" alt="" class="footer_logo">
         <p class="copy">Copyright &copy;2021 Epic Bounties</p>
       </div>
       <div class="col-md-9 col-sm-9 col-xs-12 footer_content">
         <div class="col-md-4 col-sm-4 col-xs-6">
           <h2>empresas</h2>
           <ul>
-            <li><a href="/formulario-empresas.html" target="_blank">Regístrate ahora</a></li>
+            <li><a href="{{ "/formulario-empresas.html" | prepend: site.baseurl }}" target="_blank">Regístrate ahora</a></li>
 
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-6">
           <h2>comunidad</h2>
           <ul>
-            <li><a href="/formulario-hunters.html" target="_blank">Únete ahora</a></li>
+            <li><a href="{{ "/formulario-hunters.html" | prepend: site.baseurl }}" target="_blank">Únete ahora</a></li>
             <li><a href="https://t.me/joinchat/AKWAVhs1zLi_RWcLaSIiiw" target="_blank">Telegram</a>
             <li><a href="https://discord.gg/eVDzZjTEfb" target="_blank">Discord</a></li>
             <li><a href="https://www.youtube.com/channel/UCTrE5C3LHstzzDLHhUNSwTw" target="_blank">Youtube</a></li>
@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-8 col-sm-8 col-xs-6">
           <ul  style="padding-top: 5px;">
-            <li><a href="/legal.html" target="_blank">Aviso Legal, Política de Privacidad y Cookies.</a></li>
+            <li><a href="{{ "/legal.html" | prepend: site.baseurl }}" target="_blank">Aviso Legal, Política de Privacidad y Cookies.</a></li>
           </ul>
         </div>
       </div>
@@ -64,7 +64,7 @@
   <!--<a id="button"></a>
   <div id="preloader">
        <div class="loadpad">
-         <img src="/images/apple-touch-icon.png" alt="">
+         <img src="{{ "/images/apple-touch-icon.png" | prepend: site.baseurl }}" alt="">
        </div>
 
          <div class="spinner">
@@ -74,11 +74,11 @@
     </div>
     </div>-->
 
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/owl.carousel.min.js"></script>
-  <script src="/js/custom.js"></script>
-  <script src="/js/tilt.jquery.js"></script>
+  <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/owl.carousel.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/custom.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/tilt.jquery.js" | prepend: site.baseurl }}"></script>
 
   <script>
   // When the user scrolls down 50px from the top of the document, resize the header's font size

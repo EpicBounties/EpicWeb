@@ -7,12 +7,12 @@
     <h1>News</h1>
     <ul class="nav nav-pills" id="news-tabs">
         <li class="nav-item">
-            <a class="nav-link active" href="/blog">All posts</a>
+            <a class="nav-link active" href="{{ "/blog" | prepend: site.baseurl }}">All posts</a>
         </li>
         {% assign sorted_cats = site.categories | sort %}
         {% for category in sorted_cats %}
         <li class="nav-item">
-            <a class="nav-link" href="/blog/categories/{{ category | first | slugify }}">{{ category | first | capitalize }}</a>
+            <a class="nav-link" href="{{ "/blog" | prepend: site.baseurl }}/categories/{{ category | first | slugify }}">{{ category | first | capitalize }}</a>
             </li>
         {% endfor %}
     </ul>
@@ -20,7 +20,7 @@
     <ul>
     {% for post in paginator.posts %}
         <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h2><a href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a></h2>
         {{ post.excerpt }}
         </li>
     {% endfor %}
