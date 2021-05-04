@@ -1,13 +1,15 @@
 global:
-  tagline: English
-  about: About
-  twitter: Twitter
-  github: GitHub
+  contact: Location and contact
+  legal: Legal Notice, Cookie and Privacy Policy
 langs:
   en: English
   es: Español
-pages:
-  example: example
-  includeexample: The following text is a Jekyll include liquid tag parameter
-titles:
-  pagination: Pagination
+blogs:
+  title: News
+  all: All posts
+  prev: Previous
+  next: Next
+  page: Page
+  category: Category
+  tags: Tags
+
