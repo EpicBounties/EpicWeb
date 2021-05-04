@@ -3,47 +3,47 @@
 /* CSS Document */
 
 @font-face {
-    src: url(../assets/fonts/FontAwesome.otf);
+    src: url(/assets/fonts/FontAwesome.otf);
     font-family: FontAwesome;
 }
 
 @font-face {
-    src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+    src: url(/assets/fonts/WorkSans-VariableFont_wght.ttf);
     font-family: WorkSans;
 }
 
 @font-face {
-    src: url(../assets/fonts/EncodeSans-VariableFont_wdth,wght.ttf);
+    src: url(/assets/fonts/EncodeSans-VariableFont_wdth,wght.ttf);
     font-family: EncodeSans;
 }
 
 @font-face {
-    src: url(../assets/fonts/Rajdhani-Bold.ttf);
+    src: url(/assets/fonts/Rajdhani-Bold.ttf);
     font-family: Rajdhani-Bold;
 }
 
 @font-face {
-    src: url(../assets/fonts/Rajdhani-Light.ttf);
+    src: url(/assets/fonts/Rajdhani-Light.ttf);
     font-family: Rajdhani-Light;
 }
 
 @font-face {
-    src: url(../assets/fonts/Rajdhani-Medium.ttf);
+    src: url(/assets/fonts/Rajdhani-Medium.ttf);
     font-family: Rajdhani-Medium;
 }
 
 @font-face {
-    src: url(../assets/fonts/Rajdhani-Regular.ttf);
+    src: url(/assets/fonts/Rajdhani-Regular.ttf);
     font-family: Rajdhani-Regular;
 }
 
 @font-face {
-    src: url(../assets/fonts/Rajdhani-SemiBold.ttf);
+    src: url(/assets/fonts/Rajdhani-SemiBold.ttf);
     font-family: Rajdhani-SemiBold;
 }
 
 @font-face {
-    src: url(../assets/fonts/Oswald-Stencil.ttf);
+    src: url(/assets/fonts/Oswald-Stencil.ttf);
     font-family: Oswald-Stencil;
 }
 
