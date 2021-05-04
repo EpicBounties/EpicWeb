@@ -24,6 +24,7 @@ plugins:
   - jekyll-category-pages
   - jekyll/tagging
   - jekyll-paginate
+  - jekyll-multiple-languages-plugin
   
 feed:
   path: feed.xml
@@ -41,6 +42,11 @@ category_layout     : category.html
 tag_feed_dir        : blog/tags
 tag_page_dir        : blog/tags
 tag_page_layout     : tag
+
+# Languages
+languages                   : ["es", "en"]
+exclude_from_localizations  : ["assets"]
+default_locale_in_subfolder : true
 
 # Outputting
 paginate            : 5

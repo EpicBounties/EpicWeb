@@ -14,6 +14,7 @@ group :jekyll_plugins do
   gem 'jekyll-category-pages'
   gem 'jekyll-tagging'
   gem 'jekyll-paginate'
+  gem 'jekyll-multiple-languages-plugin'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
