@@ -9,7 +9,7 @@
     <ul class="list-inline" style="margin: 1rem 0;">
         <p style="display: inline-block;">Tags:</p>
         {% for tag in page.tags %}
-        <li class="list-inline-item"><a href="{{ "/" | prepend: site.baseurl }}{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a></li>
+        <li class="list-inline-item"><a href="{{ "/" | prepend: site.baseurl }}{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}.html">{{ tag }}</a></li>
         {% endfor %}
     </ul>
 </div>
