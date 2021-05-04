@@ -1,29 +1,65 @@
-docs_list_title: Site main menu
+docs_list_title: Menú principal / Main menu
 docs:
+  es:
+    # - title: Webinar
+    #   url: formulario-webinar.html
 
-# - title: Webinar
-#   url: formulario-webinar.html
+    - title: Comunidad
+      url: formulario-hunters.html
 
-- title: Comunidad
-  url: formulario-hunters.html
+    - title: Empresas
+      url: formulario-empresas.html
 
-- title: Empresas
-  url: formulario-empresas.html
+    - title: MSSPs
+      url: formulario-empresas.html
 
-- title: MSSPs
-  url: formulario-empresas.html
+    - title: Cómo funciona
+      url: "#works"
+      hash: true
 
-- title: Cómo funciona
-  url: "#works"
+    - title: Beneficios
+      url: "#companies"
+      hash: true
 
-- title: Beneficios
-  url: "#companies"
+    # - title: Socios
+    #   url: "#partner"
+    #   hash: true
 
-# - title: Partners
-#   url: "#partner"
+    # - title: Nosotros
+    #   url: "#team-member"
+    #   hash: true
 
-# - title: Nosotros
-#   url: "#team-member"
+    - title: Blog
+      url: blog/
 
-- title: Blog
-  url: blog/
+  en:
+    # - title: Webinar
+    #   url: webinar-form.html
+
+    - title: Community
+      url: hunters-form.html
+
+    - title: Businesses
+      url: business-form.html
+
+    - title: MSSPs
+      url: business-form.html
+
+    - title: How It Works
+      url: "#works"
+      hash: true
+
+    - title: Benefits
+      url: "#companies"
+      hash: true
+
+    # - title: Partners
+    #   url: "#partner"
+    #   hash: true
+
+    # - title: Our Team
+    #   url: "#team-member"
+    #   hash: true
+
+    - title: Blog
+      url: blog/
