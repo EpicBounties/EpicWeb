@@ -2,22 +2,22 @@
 {% case day %}
     {% when '1' or '2' or '3' or '4' or '5' or '6' or '7' or '8' or '9' %} {{ day | prepend: "0" }}
     {% else %} {{ day }}
-{% endcase %} {% if page.lang != "es" %}
+{% endcase %} {% if site.lang != "es" %}
 {{ include.date | date: "%b" }}
 {% else %}
     {% assign m = include.date | date: "%-m" %}
     {% case m %}
-            {% when  '1' %}enero
-            {% when  '2' %}febrero
-            {% when  '3' %}marzo
-            {% when  '4' %}abril
-            {% when  '5' %}mayo
-            {% when  '6' %}junio
-            {% when  '7' %}julio
-            {% when  '8' %}agosto
-            {% when  '9' %}septiembre
-            {% when '10' %}octubre
-            {% when '11' %}noviembre
-            {% when '12' %}diciembre
+            {% when  '1' %}enero,
+            {% when  '2' %}febrero,
+            {% when  '3' %}marzo,
+            {% when  '4' %}abril,
+            {% when  '5' %}mayo,
+            {% when  '6' %}junio,
+            {% when  '7' %}julio,
+            {% when  '8' %}agosto,
+            {% when  '9' %}septiembre,
+            {% when '10' %}octubre,
+            {% when '11' %}noviembre,
+            {% when '12' %}diciembre,
     {% endcase %}
 {% endif %} {{ include.date | date: "%Y" }}
