@@ -59,6 +59,15 @@
       </div>
       <div class="col-md-12 col-sm-12 col-xs-12 copy_2">
         <p class="copy">Copyright &copy;2021 Epic Bounties</p>
+        <ul class="lang-select">
+        {% if site.lang == "es" %}
+          <li class="text-muted">{% t lang.es %}</li>
+          <li><a href="/en">{% t lang.en %}</a></li>
+        {% elsif site.lang == "en" %}
+          <li><a href="/es">{% t lang.es %}</a></li>
+          <li class="text-muted">{% t lang.en %}</li>
+        {% endif %}
+        </ul>
       </div>
     </div>
   </div>

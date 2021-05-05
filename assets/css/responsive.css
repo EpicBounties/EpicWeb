@@ -415,20 +415,25 @@
         padding: 150px 0px 0px;
         overflow: hidden;
     }
-    .copy {
+    .copy,
+    .lang-select {
         display: none;
     }
     .copy_2 {
         display: block;
+        padding: 50px 0px;
     }
-    .copy_2 .copy {
-        color: #5e6b6e;
+    .copy_2 .copy,
+    .copy_2 .lang-select {
         font-size: 16px;
         position: relative;
         top: 0;
         text-align: center;
-        padding: 50px 0px;
+        margin: 10px 0;
         display: block;
+    }
+    .copy_2 .copy {
+        color: #5e6b6e;
     }
     .navbar {
         padding: 0px 0px;
