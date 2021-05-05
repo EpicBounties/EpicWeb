@@ -1110,6 +1110,22 @@ footer {
     top: 360px;
 }
 
+.lang-select {
+    font-family: WorkSans;
+    font-size: 14px;
+    position: absolute;
+    top: 390px;
+}
+
+.lang-select li {
+    display: inline-block;
+}
+
+.lang-select li:not(:last-child):after {
+    content: " \2014";
+    color: rgba(255, 255, 255, 0.2);
+}
+
 
 /*=====================
    footer End
