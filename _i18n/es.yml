@@ -1,19 +1,23 @@
-
 meta:
   tagline: Primera plataforma bug bounty de habla hispana
   desc: La Plataforma de Bug Bounty de Habla Hispana Epic bounties ayuda a las empresas a reducir los riesgos de seguridad trabajando con la mejor comunidad de hackers éticos hispanohablante
-global:
+footer:
+  business: Empresas
+  register: Regístrate ahora
+  community: Comunidad
+  signup: Únete ahora
   contact: Dirección y Contacto
   legal: Aviso Legal, Política de Privacidad y Cookies
 langs:
   en: English
   es: Español
-blogs:
+blog:
   title: Noticias
   all: Todas las entradas
   prev: Previo
   next: Siguiente
   page: Página
+  of: de
   category: Categoría
   tags: Etiquetas
 
