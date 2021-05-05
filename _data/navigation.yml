@@ -34,16 +34,16 @@ docs:
 
   en:
     # - title: Webinar
-    #   url: webinar-form.html
+    #   url: formulario-webinar.html
 
     - title: Community
-      url: hunters-form.html
+      url: formulario-hunters.html
 
     - title: Business
-      url: business-form.html
+      url: formulario-empresas.html
 
     - title: MSSPs
-      url: business-form.html
+      url: formulario-empresas.html
 
     - title: How It Works
       url: "#works"
