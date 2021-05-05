@@ -2,7 +2,7 @@
     layout: default
 ---
 <div class="container">
-    <h2 class="page-title uppercase">All posts tagged "{{ page.tag }}"</h2>
+    <h2 class="page-title uppercase">{% t blog.tags.all %} "{{ page.tag }}"</h2>
     
     <ul>
     {% for post in page.posts %}

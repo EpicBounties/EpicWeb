@@ -2,7 +2,7 @@
     layout: default
 ---
 <div class="container">
-    <h2 class="page-title uppercase">All posts in "{{ page.title }}"</h2>
+    <h2 class="page-title uppercase">{% t blog.category.all %} "{{ page.title }}"</h2>
     {% assign paginator = page.paginator %}
     <ul>
     {% for post in paginator.posts %}
@@ -16,18 +16,18 @@
     <div class="pagination">
     {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="previous">
-        Previous
+        {% t blog.previous %}
         </a>
     {% else %}
-        <span class="previous">Previous</span>
+        <span class="previous">{% t blog.previous %}</span>
     {% endif %}
     <span class="page_number">
-        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        {% t blog.page %}: {{ paginator.page }} {% t blog.of %} {{ paginator.total_pages }}
     </span>
     {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        <a href="{{ paginator.next_page_path }}" class="next">{% t blog.next %}</a>
     {% else %}
-        <span class="next">Next</span>
+        <span class="next">{% t blog.next %}</span>
     {% endif %}
     </div>
 </div>
