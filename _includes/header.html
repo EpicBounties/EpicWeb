@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="{{ "/assets/css/font-awesome.css" | prepend: site.baseurl_root }}">
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl_root }}">
     <link rel="stylesheet" href="{{ "/assets/css/responsive.css" | prepend: site.baseurl_root }}">
+    {% if page.url contains "/blog/" %}<link rel="stylesheet" href="{{ "/assets/css/blog.css" | prepend: site.baseurl_root }}">{% endif %}
 
 </head>
 
