@@ -1,13 +1,17 @@
 ---
-    layout: default
-    title: Epic Bounties - Blog
-    description: Blog
+  layout: default
+  title:
+    es: Blog
+    en: Blog
+  description:
+    en: Descripción en español
+    es: English description
 ---
 <div class="container">
-    <h1>News</h1>
+    <h1>{% t blog.title %}</h1>
     <ul class="nav nav-pills">
         <li class="nav-item">
-            <a class="nav-link active" href="{{ "/blog" | prepend: site.baseurl }}">All posts</a>
+            <a class="nav-link active" href="{{ "/blog" | prepend: site.baseurl }}">{% t blog.all %}</a>
         </li>
         {% assign sorted_cats = site.categories | sort %}
         {% for category in sorted_cats %}
@@ -29,18 +33,18 @@
     <div class="pagination">
     {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="previous">
-        Previous
+        {% t blog.previous %}
         </a>
     {% else %}
-        <span class="previous">Previous</span>
+        <span class="previous">{% t blog.previous %}</span>
     {% endif %}
     <span class="page_number">
-        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        {% t blog.page %}: {{ paginator.page }} {% t blog.of %} {{ paginator.total_pages }}
     </span>
     {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        <a href="{{ paginator.next_page_path }}" class="next">{% t blog.next %}</a>
     {% else %}
-        <span class="next">Next</span>
+        <span class="next">{% t blog.next %}</span>
     {% endif %}
     </div>
 </div>
