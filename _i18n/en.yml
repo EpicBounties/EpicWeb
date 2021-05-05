@@ -18,6 +18,10 @@ blog:
   next: Next
   page: Page
   of: of
-  category: Category
-  tags: Tags
+  category:
+    title: Category
+    all: All posts in
+  tags:
+    title: Tags
+    all: All posts tagged
 

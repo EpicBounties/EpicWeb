@@ -18,6 +18,10 @@ blog:
   next: Siguiente
   page: Página
   of: de
-  category: Categoría
-  tags: Etiquetas
+  category:
+    title: Categoría
+    all: Todas las entradas en
+  tags:
+    title: Etiquetas
+    all: Todas las entradas etiquetadas
 
