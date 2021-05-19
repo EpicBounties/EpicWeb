@@ -45,7 +45,7 @@ tag_page_layout     : tag
 
 # Languages
 languages                   : ["es", "en"]
-exclude_from_localizations  : ["assets"]
+# exclude_from_localizations  : ["assets"]
 default_locale_in_subfolder : true
 
 # Outputting
