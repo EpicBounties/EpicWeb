@@ -1,0 +1,33 @@
+---
+    layout: default
+---
+<div class="container">
+    <h2 class="page-title uppercase">{% t blog.category.all %} "{{ page.title }}"</h2>
+    {% assign paginator = page.paginator %}
+    <ul>
+    {% for post in paginator.posts %}
+        <li>
+        <h2><a href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+        </li>
+    {% endfor %}
+    </ul>
+
+    <div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">
+        {% t blog.previous %}
+        </a>
+    {% else %}
+        <span class="previous">{% t blog.previous %}</span>
+    {% endif %}
+    <span class="page_number">
+        {% t blog.page %}: {{ paginator.page }} {% t blog.of %} {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">{% t blog.next %}</a>
+    {% else %}
+        <span class="next">{% t blog.next %}</span>
+    {% endif %}
+    </div>
+</div>
