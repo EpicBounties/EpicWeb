@@ -1,5 +1,5 @@
 name                : Epic Bounties
-baseurl             : "/EpicWeb" # does not include hostname
+# baseurl             : "/EpicWeb" # does not include hostname
 
 # Where things are
 source              : .
