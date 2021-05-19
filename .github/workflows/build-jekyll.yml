@@ -3,7 +3,7 @@ name: Jekyll Deploy Action
 on:
   push:
     branches:
-      - jekyll
+      - main
 
 jobs:
   build_and_deploy:
@@ -24,4 +24,4 @@ jobs:
         with:
           provider: 'github'
           token: ${{ secrets.GH_TOKEN }}
-          branch: 'main'
+          branch: 'jekyll'
