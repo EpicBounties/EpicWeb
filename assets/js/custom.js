@@ -3,7 +3,7 @@ const url = window.location.href;
 const getLang = () => {
     return /^en\b/.test(window.navigator.language) ? "en" : "es";
 }
-if (document.readyState !== "loading") {
+document.onreadystatechange = () => {
     if (!(/es\b/.test(url)) && !(/en\b/.test(url))) {
         window.location.href = url + getLang();
     }
