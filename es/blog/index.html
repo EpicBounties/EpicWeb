@@ -1,12 +1,9 @@
 ---
   layout: default
-  lang: en
-  title:
-    es: Blog
-    en: Blog
-  description:
-    en: Descripción en español
-    es: English description
+  lang: es
+
+  title: Blog
+  description: Descripción en español
 ---
 {% assign items_grouped = paginator.posts | group_by: "ref" %}
 <div class="container">
