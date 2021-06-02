@@ -1,6 +1,5 @@
 name                : Epic Bounties
 # baseurl             : "/EpicWeb" # does not include hostname
-lang                : es
 
 # Where things are
 source              : .
