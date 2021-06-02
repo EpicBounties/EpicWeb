@@ -1,5 +1,5 @@
 ---
-title: English sample
+title: English sample (002)
 description: This is a sample blog post.
 author: John Doe
 

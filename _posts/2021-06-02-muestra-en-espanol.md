@@ -1,5 +1,5 @@
 ---
-title: Muestra en español
+title: Muestra en español (004)
 description: Esta es una entrada de muestra.
 author: John Doe
 
