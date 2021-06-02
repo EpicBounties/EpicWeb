@@ -1,6 +1,5 @@
-{% assign versions = site.posts | sort: 'lang' | where: "ref", post.ref %}
 <ul>
-{% for post in versions %}
+{% for post in lang_posts %}
     <li>{{ post.title }}</li>
 {% endfor %}
 </ul>

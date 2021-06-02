@@ -1,5 +1,6 @@
 ---
   layout: default
+  lang: en
   title:
     es: Blog
     en: Blog
@@ -7,19 +8,51 @@
     en: Descripción en español
     es: English description
 ---
-{% assign items_grouped = paginator.posts | sort: "title" %}
-<ul>
-{% for post in items_grouped %}
-    <li>{{ post.title }}</li>
-{% endfor %}
-</ul>
-{% comment %}
-{% for group in items_grouped %}
-    {% if group.items.size > 1 %}
-        {% assign post = group.items | where: "lang", page.lang | first %}
-    {% else%}
-        {% assign post = group.items[0] %}
-    {% endif%}
-    {% include archive.html %}
-{% endfor%}
-{% endcomment %}
+{% assign items_grouped = paginator.posts | group_by: "ref" %}
+<div class="container">
+    <h1>{{ site.data[page.lang].blog.title }}</h1>
+    {% comment %}
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ "/blog" | prepend: site.baseurl }}">{{ site.data[page.lang].blog.all }}</a>
+        </li>
+        {% assign sorted_cats = site.categories | sort %}
+        {% for category in sorted_cats %}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ "/blog" | prepend: site.baseurl }}/categories/{{ category | first | slugify }}">{{ category | first | capitalize }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endcomment %}
+
+    <ul>
+    {% for group in items_grouped %}
+        {% if group.items.size > 1 %}
+            {% assign post = group.items | where: "lang", page.lang | first %}
+        {% else%}
+            {% assign post = group.items[0] %}
+        {% endif%}
+        <li>
+        <h2><a href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+        </li>
+    {% endfor%}
+
+    <div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">
+        {{ site.data[page.lang].blog.previous }}
+        </a>
+    {% else %}
+        <span class="previous">{{ site.data[page.lang].blog.previous }}</span>
+    {% endif %}
+    <span class="page_number">
+        {{ site.data[page.lang].blog.page }}: {{ paginator.page }} {{ site.data[page.lang].blog.of }} {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">{{ site.data[page.lang].blog.next }}</a>
+    {% else %}
+        <span class="next">{{ site.data[page.lang].blog.next }}</span>
+    {% endif %}
+    </div>
+</div>
