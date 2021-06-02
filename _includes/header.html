@@ -21,8 +21,9 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{% if page.description %}{{ page.description[page.lang] }}{% else %}{{ site.data[page.lang].meta.desc }}{% endif %}" />
-    <title>Epic Bounties - {% if page.title %}{{ page.title[page.lang] }}{% else %}{{ site.data[page.lang].meta.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data[page.lang].meta.desc }}{% endif %}" />
+    <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Epic Bounties{% endif %}" />
+    <title>Epic Bounties - {% if page.title %}{{ page.title }}{% else %}{{ site.data[page.lang].meta.title }}{% endif %}</title>
     {% feed_meta %}
 
     <link href="{{ "/assets/images/fav.png" | prepend: site.baseurl_root }}" rel="icon">
