@@ -3,11 +3,8 @@ title: Webinar Here
 description: This is a sample blog post.
 author: John Doe
 
-category: sample
-tags: [one, two, three]
-
 lang: en
-ref: 002
+ref: 003
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum erat nec diam congue, vitae rhoncus tortor laoreet. Curabitur consequat dui non metus blandit convallis. Duis in consectetur sapien. Ut varius, odio quis iaculis accumsan, est nibh sodales leo, eu convallis purus elit sit amet quam. Nunc at eros dui. Cras feugiat fermentum nisi, sit amet rutrum justo auctor at. Aliquam consequat orci odio. Vivamus et elementum ipsum. Curabitur pellentesque diam nec lorem imperdiet, sit amet molestie sapien viverra. Duis finibus, turpis non elementum dapibus, ipsum neque cursus eros, at aliquet nunc nulla et purus. Ut sagittis gravida dolor. Fusce justo enim, consequat sed sollicitudin lobortis, sodales vel nibh. Cras molestie accumsan turpis in pellentesque. Aenean dapibus dolor mattis est vulputate vestibulum.
 
