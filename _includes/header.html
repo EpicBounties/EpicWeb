@@ -59,7 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                       <span class="icon-bar"></span>
                                       <span class="icon-bar"></span>
                                      </button>
-                        <a id="navbrand" class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}{% if page.url contains "index.html" %}index.html{% endif %}"><img src="{{ "/assets/images/logo2.png" | prepend: site.baseurl_root }}" alt=""></a>
+                        <a id="navbrand" class="navbar-brand" href="{{ "/" | prepend: site.baseurl | append: page.lang | append: "/" }}{% if page.url contains "index.html" %}index.html{% endif %}"><img src="{{ "/assets/images/logo2.png" | prepend: site.baseurl_root }}" alt=""></a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="myNavbar">
