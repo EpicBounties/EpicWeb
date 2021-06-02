@@ -1,13 +1,13 @@
 // Language detect
-const url = window.location.href;
-const getLang = () => {
-    return /^en\b/.test(window.navigator.language) ? "en" : "es";
-}
-document.onreadystatechange = () => {
-    if (!(/\bes\b/.test(url)) && !(/\ben\b/.test(url))) {
-        window.location.href = url + getLang();
-    }
-}
+// const url = window.location.href;
+// const getLang = () => {
+//     return /^en\b/.test(window.navigator.language) ? "en" : "es";
+// }
+// document.onreadystatechange = () => {
+//     if (!(/\bes\b/.test(url)) && !(/\ben\b/.test(url))) {
+//         window.location.href = url + getLang();
+//     }
+// }
 
 // Scroll
 $(window).scroll(function() {

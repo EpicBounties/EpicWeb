@@ -1,0 +1,25 @@
+---
+  layout: default
+  title:
+    es: Blog
+    en: Blog
+  description:
+    en: Descripción en español
+    es: English description
+---
+{% assign items_grouped = paginator.posts | sort: "title" %}
+<ul>
+{% for post in items_grouped %}
+    <li>{{ post.title }}</li>
+{% endfor %}
+</ul>
+{% comment %}
+{% for group in items_grouped %}
+    {% if group.items.size > 1 %}
+        {% assign post = group.items | where: "lang", page.lang | first %}
+    {% else%}
+        {% assign post = group.items[0] %}
+    {% endif%}
+    {% include archive.html %}
+{% endfor%}
+{% endcomment %}

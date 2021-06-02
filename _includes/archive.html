@@ -1,0 +1,15 @@
+{% assign versions = site.posts | sort: 'lang' | where: "ref", post.ref %}
+<ul>
+{% for post in versions %}
+    <li>{{ post.title }}</li>
+{% endfor %}
+</ul>
+{% comment %}
+{% if versions.size > 1 %}
+{% for version in versions %}
+    {% if version.lang != site.lang %}
+    <a href="{{ version.url }}" >{{ site.data[version.lang].blog.all }} </a>
+    {% endif %}
+{% endfor %}
+{% endif %}
+{% endcomment %}

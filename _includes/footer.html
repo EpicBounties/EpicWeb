@@ -10,33 +10,33 @@
         <p class="copy">Copyright &copy;2021 Epic Bounties</p>
         <ul class="lang-select">
         {% if site.lang == "es" %}
-          <li class="text-muted">{% t lang.es %}</li>
-          <li><a href="/en">{% t lang.en %}</a></li>
+          <li class="text-muted">{{ site.data.en.lang.es }}</li>
+          <li><a href="/en">{{ site.data.en.lang.en }}</a></li>
         {% elsif site.lang == "en" %}
-          <li><a href="/es">{% t lang.es %}</a></li>
-          <li class="text-muted">{% t lang.en %}</li>
+          <li><a href="/es">{{ site.data.en.lang.es }}</a></li>
+          <li class="text-muted">{{ site.data.en.lang.en }}</li>
         {% endif %}
         </ul>
       </div>
       <div class="col-md-9 col-sm-9 col-xs-12 footer_content">
         <div class="col-md-4 col-sm-4 col-xs-6">
-          <h2>{% t footer.business %}</h2>
+          <h2>{{ site.data.en.footer.business }}</h2>
           <ul>
-            <li><a href="{{ "/formulario-empresas.html" | prepend: site.baseurl }}" target="_blank">{% t footer.register %}</a></li>
+            <li><a href="{{ "/formulario-empresas.html" | prepend: site.baseurl }}" target="_blank">{{ site.data.en.footer.register }}</a></li>
 
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-6">
-          <h2>{% t footer.community %}</h2>
+          <h2>{{ site.data.en.footer.community }}</h2>
           <ul>
-            <li><a href="{{ "/formulario-hunters.html" | prepend: site.baseurl }}" target="_blank">{% t footer.signup %}</a></li>
+            <li><a href="{{ "/formulario-hunters.html" | prepend: site.baseurl }}" target="_blank">{{ site.data.en.footer.signup }}</a></li>
             <li><a href="https://t.me/epicbounties" target="_blank">Telegram</a>
             <li><a href="https://discord.gg/eVDzZjTEfb" target="_blank">Discord</a></li>
             <li><a href="https://www.youtube.com/channel/UCTrE5C3LHstzzDLHhUNSwTw" target="_blank">YouTube</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-6">
-          <h2>{% t footer.contact %}</h2>
+          <h2>{{ site.data.en.footer.contact }}</h2>
           <ul>
             <li><a>Calle Compositor Lehmberg Ruiz, 13, 29007 Málaga</a></li>
             <li><a href="mailto:comunidad@epicbounties.com">comunidad@epicbounties.com</a></li>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-md-8 col-sm-8 col-xs-6">
           <ul  style="padding-top: 5px;">
-            <li><a href="{{ "/legal.html" | prepend: site.baseurl }}" target="_blank">{% t footer.legal %}.</a></li>
+            <li><a href="{{ "/legal.html" | prepend: site.baseurl }}" target="_blank">{{ site.data.en.footer.legal }}.</a></li>
           </ul>
         </div>
       </div>
@@ -61,11 +61,11 @@
         <p class="copy">Copyright &copy;2021 Epic Bounties</p>
         <ul class="lang-select">
         {% if site.lang == "es" %}
-          <li class="text-muted">{% t lang.es %}</li>
-          <li><a href="/en">{% t lang.en %}</a></li>
+          <li class="text-muted">{{ site.data.en.lang.es }}</li>
+          <li><a href="/en">{{ site.data.en.lang.en }}</a></li>
         {% elsif site.lang == "en" %}
-          <li><a href="/es">{% t lang.es %}</a></li>
-          <li class="text-muted">{% t lang.en %}</li>
+          <li><a href="/es">{{ site.data.en.lang.es }}</a></li>
+          <li class="text-muted">{{ site.data.en.lang.en }}</li>
         {% endif %}
         </ul>
       </div>
