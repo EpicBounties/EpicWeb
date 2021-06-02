@@ -1,6 +1,7 @@
 ---
 title: Hola Mundo
 description: Esta es una entrada de muestra.
+author: John Doe
 
 category: muestra
 tags: [uno, dos, tres]

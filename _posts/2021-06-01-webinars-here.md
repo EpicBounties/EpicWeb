@@ -1,6 +1,7 @@
 ---
 title: Webinar Here
 description: This is a sample blog post.
+author: John Doe
 
 category: sample
 tags: [one, two, three]
