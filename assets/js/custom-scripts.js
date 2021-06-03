@@ -1,3 +1,16 @@
+// Language detect
+const url = window.location.href;
+if (!(/\bblog\b/.test(url))) {
+    const getLang = () => {
+        return /^en\b/.test(window.navigator.language) ? "en" : "es";
+    }
+    document.onreadystatechange = () => {
+        if (!(/\bes\b/.test(url)) && !(/\ben\b/.test(url))) {
+            window.location.href = url + getLang();
+        }
+    }
+}
+
 /**
   * script for the the menu hamburger animation
   * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
