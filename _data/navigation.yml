@@ -14,23 +14,16 @@ docs:
       url: formulario-empresas.html
 
     - title: Cómo funciona
-      url: "#works"
+      url: "#sectionAcercaDeLaPlataforma"
       hash: true
 
     - title: Beneficios
-      url: "#companies"
+      url: "#sectionBeneficios"
       hash: true
 
-    # - title: Socios
-    #   url: "#partner"
-    #   hash: true
-
-    # - title: Nosotros
-    #   url: "#team-member"
-    #   hash: true
-
-    # - title: Blog
-    #   url: blog/
+    - title: Blog
+      url: "#sectionLatestNews"
+      hash: true
 
   en:
     # - title: Webinar
@@ -53,13 +46,6 @@ docs:
       url: "#sectionBeneficios"
       hash: true
 
-    # - title: Partners
-    #   url: "#partner"
-    #   hash: true
-
-    # - title: Our Team
-    #   url: "#team-member"
-    #   hash: true
-
-    # - title: Blog
-    #   url: blog/
+    - title: Blog
+      url: "#sectionLatestNews"
+      hash: true
