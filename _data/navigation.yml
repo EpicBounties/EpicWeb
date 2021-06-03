@@ -7,10 +7,10 @@ docs:
     - title: Comunidad
       url: formulario-hunters.html
 
-    - title: Empresas
+    - title: Negocio
       url: formulario-empresas.html
 
-    - title: MSSPs
+    - title: MSSP
       url: formulario-empresas.html
 
     - title: Cómo funciona
@@ -29,8 +29,8 @@ docs:
     #   url: "#team-member"
     #   hash: true
 
-    - title: Blog
-      url: blog/
+    # - title: Blog
+    #   url: blog/
 
   en:
     # - title: Webinar
@@ -42,7 +42,7 @@ docs:
     - title: Business
       url: formulario-empresas.html
 
-    - title: MSSPs
+    - title: MSSP
       url: formulario-empresas.html
 
     - title: How It Works
@@ -61,5 +61,5 @@ docs:
     #   url: "#team-member"
     #   hash: true
 
-    - title: Blog
-      url: blog/
+    # - title: Blog
+    #   url: blog/
