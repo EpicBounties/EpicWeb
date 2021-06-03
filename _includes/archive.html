@@ -19,8 +19,8 @@
     {% for group in items_grouped %}
         {% assign post = group.items | where: "lang", page.lang | first %}
         <li>
-        <h2><a href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
+            <h2><a href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a></h2>
+            {{ post.excerpt }}
         </li>
     {% endfor%}
 
