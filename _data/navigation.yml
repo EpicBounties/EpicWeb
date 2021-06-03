@@ -46,11 +46,11 @@ docs:
       url: formulario-empresas.html
 
     - title: How It Works
-      url: "#works"
+      url: "#sectionAcercaDeLaPlataforma"
       hash: true
 
     - title: Benefits
-      url: "#companies"
+      url: "#sectionBeneficios"
       hash: true
 
     # - title: Partners
