@@ -22,7 +22,7 @@ docs:
       hash: true
 
     - title: Blog
-      url: "#sectionLatestNews"
+      url: blog/
       hash: true
 
   en:
@@ -47,5 +47,4 @@ docs:
       hash: true
 
     - title: Blog
-      url: "#sectionLatestNews"
-      hash: true
+      url: blog/
