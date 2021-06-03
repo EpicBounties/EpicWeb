@@ -7,30 +7,23 @@ docs:
     - title: Comunidad
       url: formulario-hunters.html
 
-    - title: Empresas
+    - title: Negocio
       url: formulario-empresas.html
 
-    - title: MSSPs
+    - title: MSSP
       url: formulario-empresas.html
 
     - title: Cómo funciona
-      url: "#works"
+      url: "#sectionAcercaDeLaPlataforma"
       hash: true
 
     - title: Beneficios
-      url: "#companies"
+      url: "#sectionBeneficios"
       hash: true
-
-    # - title: Socios
-    #   url: "#partner"
-    #   hash: true
-
-    # - title: Nosotros
-    #   url: "#team-member"
-    #   hash: true
 
     - title: Blog
       url: blog/
+      hash: true
 
   en:
     # - title: Webinar
@@ -42,24 +35,16 @@ docs:
     - title: Business
       url: formulario-empresas.html
 
-    - title: MSSPs
+    - title: MSSP
       url: formulario-empresas.html
 
     - title: How It Works
-      url: "#works"
+      url: "#sectionAcercaDeLaPlataforma"
       hash: true
 
     - title: Benefits
-      url: "#companies"
+      url: "#sectionBeneficios"
       hash: true
-
-    # - title: Partners
-    #   url: "#partner"
-    #   hash: true
-
-    # - title: Our Team
-    #   url: "#team-member"
-    #   hash: true
 
     - title: Blog
       url: blog/

@@ -1,0 +1,48 @@
+<section class="section-latest-news section-bg-hexa-wave-gray" id="sectionLatestNews" data-scroll-section>
+    <div class="container" data-scroll data-scroll-speed="1" data-scroll-target="#sectionLatestNews" data-scroll-delay="0.05">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="display-5 fw-extra-bold mb-5">{{ site.data[page.lang].blog.title }}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    {% assign top_story = site.posts | where: "lang", page.lang | first %}
+                    <div class="card card-post card-post-latest d-flex flex-column flex-md-row flex-lg-column ms-auto mb-5 mb-lg-0">
+                        <div class="post-feature-image-wrapper"><img class="post-feature-image img-fluid" src="{{ top_story.metaImage }}"{% if top_story.metaImageAlt %} alt="{{ top_story.metaImageAlt }}"{% endif %}></div>
+                        <div class="card-body">
+                            <div class="post-date d-inline-block fw-semibold mb-3">{% include date.html date=top_story.date %}</div>
+                            <h5 class="post-title fw-semibold">{{ top_story.title }}</h5>
+                            <p class="card-text">{{ top_story.description }}</p>
+                            <a href="{{ top_story.url | prepend: site.baseurl  }}" class="btn-read-more d-inline-flex align-items-center">
+                                <span class="text-wrapper fw-semibold text-uppercase">Read More</span>
+                                <span class="icon-wrapper lh-0"><img class="icon-arrow-right" src="/assets/images/icon-arrow-right-blue.png" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-xl-4 pe-xl-5 d-xl-flex flex-xl-column justify-content-xl-between">
+                    {% assign items_grouped = site.posts | group_by: "ref" %}
+                    {% for group in items_grouped %}
+                        {% assign post = group.items | where: "lang", page.lang | first %}{% assign count = 0 %}
+                        {% if post %}{% if post.ref == top_story.ref %}{% continue %}{% endif %}
+                            <div class="card card-post d-flex flex-column flex-sm-row pe-xl-5 mb-4">
+                                <div class="post-feature-image-wrapper"><img class="post-feature-image img-fluid" src="{{ post.metaImage }}"{% if post.metaImageAlt %} alt="{{ post.metaImageAlt }}"{% endif %}></div>
+                                <div class="card-body">
+                                    <h5 class="post-title fw-semibold mb-2 pb-1">{{ post.title }}</h5>
+                                    <p class="card-text mb-2">{{ post.description }}</p>
+                                    <a href="{{ post.url | prepend: site.baseurl  }}" class="btn-read-more d-inline-flex align-items-center">
+                                        <span class="text-wrapper fw-semibold text-uppercase">Read More</span>
+                                        <span class="icon-wrapper lh-0"><img class="icon-arrow-right" src="/assets/images/icon-arrow-right-blue.png" alt=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                        {% assign count = count | plus: 1 %}
+                        {% endif %}{% if count == 3 %}{% break %}{% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
