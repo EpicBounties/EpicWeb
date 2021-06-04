@@ -5,7 +5,6 @@ module Jekyll
         priority :low
 
         def generate(site)
-            # Until Jekyll allows me to use :slug, I have to resort to this
             site.posts.docs.each do |item|
                 item.data['permalink'] = '/' + item.lang + '/blog/' + item.slug
             end
