@@ -1,8 +1,9 @@
 ---
 title: Muestra en español (004)
 description: Esta es una entrada de muestra.
-author: John Doe
 
+author: John Doe
+tags: [one, two, three]
 lang: es
 ref: 004
 

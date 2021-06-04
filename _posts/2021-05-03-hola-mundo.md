@@ -1,8 +1,9 @@
 ---
 title: Hola Mundo
 description: Esta es una entrada de muestra.
-author: John Doe
 
+author: John Doe
+tags: [one, two, three]
 lang: es
 ref: 001
 

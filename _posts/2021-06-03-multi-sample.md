@@ -1,8 +1,9 @@
 ---
 title: Multi sample
 description: This is a sample blog post.
-author: John Doe
 
+author: John Doe
+tags: [one, two, three]
 lang: en
 ref: 005
 
