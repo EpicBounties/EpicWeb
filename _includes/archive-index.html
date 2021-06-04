@@ -23,9 +23,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 ps-xl-4 pe-xl-5 d-xl-flex flex-xl-column justify-content-xl-between">
-                    {% assign items_grouped = site.posts | group_by: "ref" %}
+                    {% assign items_grouped = site.posts | group_by: "ref" %}{% assign count = 0 %}
                     {% for group in items_grouped %}
-                        {% assign post = group.items | where: "lang", page.lang | first %}{% assign count = 0 %}
+                        {% assign post = group.items | where: "lang", page.lang | first %}
                         {% if post %}{% if post.ref == top_story.ref %}{% continue %}{% endif %}
                             <div class="card card-post d-flex flex-column flex-sm-row pe-xl-5 mb-4">
                                 <div class="post-feature-image-wrapper"><img class="post-feature-image img-fluid" src="{{ post.metaImage }}"{% if post.metaImageAlt %} alt="{{ post.metaImageAlt }}"{% endif %}></div>
