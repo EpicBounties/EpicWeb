@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MDMS4FK');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page" />
+    <title>Epic Bounties</title>
+
+    <link href="/assets/images/fav.png" rel="icon">
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDMS4FK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <p>Loading&hellip;</p>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/custom.js" type="text/javascript"></script>
+    <script src="/assets/js/tilt.jquery.js"></script>
+
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.top = "0px";
+                document.getElementById("navv").style.backgroundColor = "#192633";
+            } else {
+                document.getElementById("header").style.top = "20px";
+                document.getElementById("navv").style.backgroundColor = "transparent";
+            }
+        }
+    </script>
+</body>
+
+</html>
