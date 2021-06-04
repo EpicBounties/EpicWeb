@@ -1,13 +1,11 @@
 // Language detect
 const url = window.location.href;
-if (!(/\bblog\b/.test(url))) {
-    const getLang = () => {
-        return /^en\b/.test(window.navigator.language) ? "en" : "es";
-    }
-    document.onreadystatechange = () => {
-        if (!(/\bes\b/.test(url)) && !(/\ben\b/.test(url))) {
-            window.location.href = url + getLang();
-        }
+const getLang = () => {
+    return /^en\b/.test(window.navigator.language) ? "en" : "es";
+}
+document.onreadystatechange = () => {
+    if (!(/\bes\b/.test(url)) && !(/\ben\b/.test(url))) {
+        window.location.href = url + getLang();
     }
 }
 
