@@ -24,14 +24,12 @@ $(document).ready(function () {
   }
 
   // Init Locomotive Scroll
-  /*
-    window.addEventListener("load", function (event) {
+  window.addEventListener("load", function (event) {
     const scroll = new LocomotiveScroll({
       el: document.querySelector("[data-scroll-container]"),
       smooth: true,
     });
   });
-  */
 
   // Init OurTeam Carousel
   const swiperOurTeam = new Swiper("#swiperOurTeam", {
@@ -81,5 +79,5 @@ $(document).ready(function () {
   */
 
   // Init ModalVideo
-  new ModalVideo(".btn-ver-video")
+  new ModalVideo(".btn-ver-video");
 });
