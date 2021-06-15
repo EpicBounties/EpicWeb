@@ -2,7 +2,10 @@
 title: "EpicBounties"
 description: "La Plataforma De Bug Bounty De Habla Hispana"
 baseurl: ""
-url: "https://www.epicbounties.com"
+# dev
+url: ""
+# production
+#url: "https://www.epicbounties.com"
 
 # Plugins
 plugins:
