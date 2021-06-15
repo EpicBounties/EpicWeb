@@ -1,0 +1,53 @@
+colA:
+  en: "Business"
+  es: "Negocio"
+colA-1:
+  en: "Register"
+  es: "Registrarse"
+colA-2:
+  en: "Subscribe"
+  es: "Inscribirse"
+
+colB:
+  en: "Community"
+  es: "Comunidad"
+colB-1:
+  en: "Subscribe"
+  es: "Inscribirse"
+colB-2:
+  en: "Discord"
+  es: "Discordia"
+
+contact:
+  en: "Contact"
+  us: "Contacto"
+
+copyright: 
+  en: "All Rights Reserved."
+  es: "All Rights Reserved." 
+
+terms: 
+  en: "Terms and Conditions"
+  es: "Terms and Conditions"
+
+address: "Calle Compositor Lehmberg Ruiz, 13, 29007 Málaga"
+email: "comunidad@epicbounties.com"
+social:
+-
+  name: "rss-fill"
+  url: "/feed.xml"
+-
+  name: "telegram"
+  url: "https://t.me/epic_bounties"
+-
+  name: "linkedin"
+  url: "https://www.linkedin.com/company/epic-bounties/"
+-
+  name: "twitter"
+  url: "https://twitter.com/epicbounties"
+-
+  name: "twitch"
+  url: "https://www.twitch.tv/epicbounties"
+-
+  name: "youtube" 
+  url: "https://www.youtube.com/channel/UCTrE5C3LHstzzDLHhUNSwTw"

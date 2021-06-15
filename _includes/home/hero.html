@@ -1,0 +1,89 @@
+<section class="section-hero" id="sectionHero" data-scroll-section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-text col-lg-6 pe-xl-5">
+        <h1 class="display-4 display-xl-3 fw-bold add-short-underline mb-4">
+          <span class="fw-light d-lg-block"
+            >{{ site.data.home.hero.title-light[page.language] }}</span
+          >
+          {{ site.data.home.hero.title-heavy[page.language] }}
+        </h1>
+        <p class="lead fw-normal mb-4 pt-xl-2">
+          {{ site.data.home.features.title-light[page.language] }}
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-sm-content-start">
+          <a
+            href="/community.html"
+            class="btn btn-secondary btn-lg me-sm-2 mb-3 md-lg-0 text-uppercase"
+            >{{ site.data.home.hero.btnA[page.language] }}</a
+          >
+          <a
+            href="/business.html"
+            class="btn btn-primary btn-lg me-sm-2 mb-3 md-lg-0 text-uppercase"
+            >{{ site.data.home.hero.btnB[page.language] }}</a
+          >
+          <a
+            href="/business.html"
+            class="btn btn-secondary btn-lg me-sm-2 mb-3 md-lg-0 text-uppercase"
+            >{{ site.data.home.hero.btnC[page.language] }}</a
+          >
+        </div>
+      </div>
+      <div class="col-image col-lg-6">
+        <div class="position-relative locomotive-img-div-wrapper">
+          <img
+            class="img-floating-tab-loney"
+            srcset="
+              "{{ "/assets/images/img-loney-program@2x.png" | absolute_url }}" 2x,
+              "{{ "/assets/images/img-loney-program.png" | absolute_url }}" 1x
+            "
+            src="{{ "/assets/images/img-loney-program@2x.png | absolute_url }}""
+            alt=""
+            data-scroll
+            data-scroll-speed="-1"
+            data-scroll-target="#sectionHero"
+            data-scroll-delay="0.05"
+          />
+          <img
+            class="img-floating-tab-ranking"
+            srcset="
+              "{{ "/assets/images/img-score-ranking@2x.png" | absolute_url }}" 2x,
+              "{{ "/assets/images/img-score-ranking.png" | absolute_url }}"    1x
+            "
+            src="{{ "/assets/images/img-score-ranking@2x.png" | absolute_url }}"
+            alt=""
+            data-scroll
+            data-scroll-speed="1"
+            data-scroll-target="#sectionHero"
+            data-scroll-delay="0.05"
+          />
+          <img
+            class="img-floating-tab-severity"
+            srcset="
+              "{{ "/assets/images/img-severity-score@2x.png" | absolute_url }}" 2x,
+              "{{ "/assets/images/img-severity-score.png" | absolute_url }}"    1x
+            "
+            src="{{ "/assets/images/img-loney-program@2x.png" | absolute_url }}"
+            alt=""
+            data-scroll
+            data-scroll-speed="2"
+            data-scroll-target="#sectionHero"
+            data-scroll-delay="0.05"
+          />
+          <img
+            class="d-block img-hero-laptop mt-4 mt-lg-0"
+            srcset="
+              "{{ "/assets/images/img-hero-laptop@2x.png" | absolute_url }}" 2x,
+              "{{ "/assets/images/img-hero-laptop.png" | absolute_url }}"    1x
+            "
+            src="{{ "/assets/images/img-hero-laptop@2x.png" | absolute_url }}"
+            alt=""
+            data-scroll
+            data-scroll-speed="1"
+            data-scroll-target="#sectionHero"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

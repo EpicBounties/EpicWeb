@@ -1,92 +1,65 @@
-name                : Epic Bounties
-# baseurl             : "/EpicWeb" # does not include hostname
+# Meta
+title: "EpicBounties"
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Where things are
-source              : .
-destination         : ./_site
-plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
-
-# Handling Reading
-safe                : false
-include             : [".htaccess"]
-exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files          : [".git", ".svn"]
-encoding            : "utf-8"
-markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter : false
-
-# For RSS
+# Plugins
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-category-pages
-  - jekyll/tagging
-  - jekyll-paginate
-  
+
+# Feed
 feed:
-  path: feed.xml
+  categories:
+    - en
+    - es
 
-# Blog
-collections:
-  posts:
-    title           : Posts
-    output          : true
-    permalink       : /blog/:title
-    
-category_path       : blog/categories
-category_layout     : category.html
-
-tag_feed_dir        : blog/tags
-tag_page_dir        : blog/tags
-tag_page_layout     : tag
-
-
-# Outputting
-paginate            : 5
-paginate_path       : /blog/:num
-timezone            : Europe/Madrid
-
-quiet               : false
-verbose             : false
+# Default scopes and values
 defaults:
-  - scope:
-      path: ""
+  -
+    scope:
+      path: "en/"
     values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "posts"
+      language: "en"
+  -
+    scope:
+      path: "es/"
+    values:
+      language: "es"
+  -
+    scope:
+      path: "_posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "_posts/en/"
+    values:
+      language: "en"
+      categories: "en"
+  -
+    scope:
+      path: "_posts/es/"
+    values:
+      language: "es"
+      categories: "es"
 
-liquid:
-  error_mode        : warn
-  strict_filters    : false
-  strict_variables  : false
+# Pagination
+paginate: 12
+paginate_path: "/archive/page:num/"
 
-# Conversion
-markdown            : kramdown
-highlighter         : rouge
-lsi                 : false
-excerpt_separator   : "\n\n"
-incremental         : false
-
-# Serving
-detach              : false
-port                : 4000
-host                : 127.0.0.1
-show_dir_listing    : false
-
-# Markdown Processors
-kramdown:
-  auto_ids          : true
-  entity_output     : as_char
-  toc_levels        : [1, 2, 3, 4, 5, 6]
-  smart_quotes      : lsquo,rsquo,ldquo,rdquo
-  input             : GFM
-  hard_wrap         : false
-  footnote_nr       : 1
-  show_warnings     : false
+# Exclude from processing
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/

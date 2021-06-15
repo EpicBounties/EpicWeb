@@ -1,3 +1,26 @@
-{% include header.html %}
-{{ content }}
-{% include footer.html %}
+---
+layout:
+---
+<!DOCTYPE html>
+<html {% if page.lang %} lang="{{ page.lang }}" {% endif %}>
+  <!-- Locale Redirector -->
+  <script src="{{ "/assets/js/i18n.js" | absolute_url }}"></script>
+  
+  {% include head.html %}
+  
+  <body>
+    {% include analytics/google-tag-manager-body.html %}
+    <div
+      class="main-wrapper scroll-animations position-relative"
+      data-scroll-container
+    >
+    <main>
+      {% include header.html lang = page.lang %}
+      {{ content }}
+      {% include footer.html %}
+      {% include scripts.html %}
+    </main>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,52 @@
+  <section
+    class="section-expert-hunters section-bg-hexa-wave-blue"
+    id="sectionExpertHunters"
+    data-scroll-section
+  >
+    <div class="container">
+      <div class="row flex-lg-row-reverse align-items-center">
+        <div class="col-image col-lg-6 col-xl-5">
+          <img
+            class="d-block img-fluid img-drone-binary mb-4 mb-lg-0"
+            srcset="
+              "{{ "/assets/images/img-drone-binary@2x.png" | absolute_url }}" 2x,
+              "{{ "/assets/images/img-drone-binary.png"  | absolute_url }}"   1x
+            "
+            src="{{ "/assets/images/img-drone-binary@2x.png" | absolute_url }}"
+            alt=""
+            data-scroll
+            data-scroll-speed="1"
+            data-scroll-target="#sectionExpertHunters"
+            data-scroll-delay="0.05"
+          />
+        </div>
+        <div class="col-text col-lg-6">
+          <h2 class="fw-bold add-short-underline mb-4">
+            <span class="fw-light">{{ site.data.home.experts.title-light[page.language] }}</span> {{ site.data.home.experts.title-heavy[page.language] }}
+          </h2>
+          <p class="lead mb-4">
+            {{ site.data.home.experts.text[page.language] }}
+                      </p>
+          <div>
+            <button
+              class="
+                btn btn-secondary btn-lg btn-ver-video
+                text-uppercase
+                d-inline-flex
+                align-items-center
+              "
+              data-video-id="{{ site.data.home.experts.video }}"
+            >
+              <span class="icon-wrapper me-2"
+                ><img
+                   src="{{ "/assets/images/icon-play-round-filled-blue.png" | absolute_url }}"
+                  alt=""
+              /></span>
+              <span class="text-wrapper">{{ site.data.misc.watch-video[page.language] }}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+

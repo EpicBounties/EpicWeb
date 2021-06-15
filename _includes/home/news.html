@@ -1,0 +1,120 @@
+<section
+  class="section-latest-news section-bg-hexa-wave-gray"
+  id="sectionLatestNews"
+  data-scroll-section
+>
+  <div
+    class="container"
+    data-scroll
+    data-scroll-speed="1"
+    data-scroll-target="#sectionLatestNews"
+    data-scroll-delay="0.05"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="display-5 fw-extra-bold mb-5">
+            {{ site.data.news.title[page.language] }}
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- assign a counter -->
+        {% assign i = 0 %}
+        <!-- iterate over posts -->
+        {% for post in site.posts %}
+        <!-- only those that are the language of the page -->
+        {% if post.language == page.language %}
+        <!-- increase counter -->
+        {% assign i = i | plus: 1 %}
+        <!-- first iteration -->
+        {% if i == 1 %}
+        <!-- left col -->
+        <div class="col-lg-6">
+          <div
+            class="
+              card card-post card-post-latest
+              d-flex
+              flex-column flex-md-row flex-lg-column
+              ms-auto
+              mb-5 mb-lg-0
+            "
+          >
+            <div class="post-feature-image-wrapper">
+              <img class="post-feature-image img-fluid" src="{{
+              "/assets/images/news/" | absolute_url | append: post.image }}"
+              alt="" />
+            </div>
+            <div class="card-body">
+              <div class="post-date d-inline-block fw-semibold mb-3">
+                {{ post.date | date: "%b %-d, %Y" }}
+              </div>
+              <h5 class="post-title fw-semibold">{{ post.title }}</h5>
+              <p class="card-text">
+                {%- if post.excerpt -%} {{ post.excerpt }} {%- else -%} {{
+                post.content | strip_html | truncatewords: '50' | append: "..."
+                }} {%- endif -%}
+              </p>
+              <a
+                href="{{ post.url }}"
+                class="btn-read-more d-inline-flex align-items-center"
+              >
+                <span class="text-wrapper fw-semibold text-uppercase"
+                  >{{ site.data.news.more[page.language] }}</span
+                >
+                <span class="icon-wrapper lh-0"
+                  ><img class="icon-arrow-right" src="{{
+                  "/assets/images/icon-arrow-right-blue.png" | absolute_url }}"
+                  alt="" /></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- right col -->
+        <div
+          class="
+            col-lg-6
+            ps-xl-4
+            pe-xl-5
+            d-xl-flex
+            flex-xl-column
+            justify-content-xl-between
+          "
+        >
+          <!-- iteration from 1 to 4 -->
+          {% elsif i < 5 %}
+          <div
+            class="card card-post d-flex flex-column flex-sm-row pe-xl-5 mb-4"
+          >
+            <div class="post-feature-image-wrapper">
+              <img class="post-feature-image img-fluid" src="{{
+              "/assets/images/news/" | absolute_url | append: post.image }}"
+              alt="" />
+            </div>
+            <div class="card-body">
+              <h5 class="post-title fw-semibold mb-2 pb-1">{{ post.title }}</h5>
+              <p class="card-text mb-2">
+                {{ post.content | strip_html | truncate: '100', '...' }}
+              </p>
+              <a
+                href="{{ post.url }}"
+                class="btn-read-more d-inline-flex align-items-center"
+              >
+                <span class="text-wrapper fw-semibold text-uppercase"
+                  >{{ site.data.news.more[page.language] }}</span
+                >
+                <span class="icon-wrapper lh-0"
+                  ><img class="icon-arrow-right" src="{{
+                  "/assets/images/icon-arrow-right-blue.png" | absolute_url }}"
+                  alt="" /></span
+                >
+              </a>
+            </div>
+          </div>
+          {% endif %} {% endif %} {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

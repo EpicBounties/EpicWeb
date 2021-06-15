@@ -1,0 +1,47 @@
+title:
+  en: "Beneficios"
+  es: "Beneficios"
+subtitle:
+  en: "La oportunidad de optimizar su ciberseguridad con epic bounties"
+  es: "La oportunidad de optimizar su ciberseguridad con epic bounties"
+colA:
+  en: "Optimiza<br>
+      El Presupuesto"
+  es: "Optimiza<br>
+      El Presupuesto"
+colA-text:
+  en: "Sólo consumirá presupuesto al sumar nuevas vulnerabilidades
+      identificadas. Ideal para entornos con..."
+  es: "Sólo consumirá presupuesto al sumar nuevas vulnerabilidades
+      identificadas. Ideal para entornos con..."
+colB:
+  en: "Permite Ajustar<br>
+      Tiempos"
+  es: "Permite Ajustar<br>
+      Tiempos"
+colB-text:
+  en: "Al regular el propio MSSP el número de investigadores participantes,
+      se puede acelerar al máximo la búsqueda..."
+  es: "Al regular el propio MSSP el número de investigadores participantes,
+      se puede acelerar al máximo la búsqueda..."
+colC:
+  en: "Vulnerabilidades<br>
+      Personalizadas"
+  en: "Vulnerabilidades<br>
+      Personalizadas"
+colC-text:
+  en: "Selecciona las vulnerabilidades de forma totalmente personalizadas
+      y reales a sumar a la capa de..."
+  es: "Selecciona las vulnerabilidades de forma totalmente personalizadas
+      y reales a sumar a la capa de..."
+colD:
+  en: "Resultados A <br>Tiempo Real"
+  es: "Resultados A <br>Tiempo Real"
+colD-text:
+  en: "Los resultados son aplicables a tiempo real. En el momento que una
+      vulnerabilidad es encontrada..."
+  es: "Los resultados son aplicables a tiempo real. En el momento que una
+      vulnerabilidad es encontrada..."
+cta:
+  en: "Empresas"
+  es: "Business"

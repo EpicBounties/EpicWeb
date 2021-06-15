@@ -1,0 +1,82 @@
+  <section
+    class="section-about-the-platform"
+    id="sectionAcercaDeLaPlataforma"
+    data-scroll-section
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2
+            class="display-5 fw-extra-bold mb-5 text-center animate__animated"
+          >
+            <span class="fw-light">{{ site.data.home.about.title-light[page.language] }} </span> {{ site.data.home.about.title-heavy[page.language] }}
+          </h2>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-xl-5 offset-xl-1 ps-xl-4">
+          <div class="position-relative">
+            <img
+              class="img-floating-tab-left"
+              src="{{ "/assets/images/img-floating-tab@2x.png" | absolute_url }}"
+              alt=""
+              data-scroll
+              data-scroll-speed="-1"
+              data-scroll-target="#sectionAcercaDeLaPlataforma"
+              data-scroll-delay="0.05"
+            />
+            <img
+              class="img-floating-tab-right"
+              src="{{ "/assets/images/img-floating-tab2@2x.png" | absolute_url }}"
+              alt=""
+              data-scroll
+              data-scroll-speed="2"
+              data-scroll-target="#sectionAcercaDeLaPlataforma"
+              data-scroll-delay="0.05"
+            />
+            <img
+              class="
+                d-block
+                img-fluid img-laptop-binary
+                ms-xl-auto
+                mb-4 mb-lg-0
+              "
+              srcset="
+                {{ "/assets/images/img-laptop-binary@2x.png" | absolute_url }} 2x,
+                {{ "/assets/images/img-laptop-binary.png" | absolute_url }}    1x
+              "
+              src="{{ "/assets/images/img-laptop-binary@2x.png" | absolute_url }}"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-text col-lg-6 col-xl-5 ps-xl-4 pe-xl-5">
+          <h2 class="fw-bold add-short-underline mb-4">
+            <span class="fw-light d-lg-block">{{ site.data.home.about.subtitle-light[page.language] }}</span> {{ site.data.home.about.subtitle-heavy[page.language] }}
+          </h2>
+          <p class="lead mb-4">
+          {{ site.data.home.about.text[page.language] }}
+          </p>
+          <div>
+            <button
+              class="
+                btn btn-secondary btn-lg btn-ver-video
+                text-uppercase
+                d-inline-flex
+                align-items-center
+              "
+              data-video-id="JCsfKT9lOJk"
+            >
+              <span class="icon-wrapper me-2"
+                ><img
+                  src="{{ "/assets/images/icon-play-round-filled-blue.png" | absolute_url }}"
+                  alt=""
+              /></span>
+              <span class="text-wrapper">{{ site.data.misc.watch-video[page.language] }}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
