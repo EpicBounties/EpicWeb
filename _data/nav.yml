@@ -34,3 +34,4 @@
     es: "Acceder" 
   url: "https://app.epicbounties.com/"
   cta: true
+  absolute: true

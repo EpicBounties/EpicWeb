@@ -71,13 +71,21 @@
                   px-4 px-xl-3
                   d-inline-block
                 "
+                {% if item.absolute == true %}
+                href="{{ item.url }}"
+                {% else %}
                 href="/{{ page.language }}{{ item.url }}"
+                {% endif %}
                 >{{ item.name[page.language] }}</a
               >
               {% else %}
               <a
                 class="nav-link fw-semibold text-uppercase"
+                {% if item.absolute == true %}
+                href="{{ item.url }}"
+                {% else %}
                 href="/{{ page.language }}{{ item.url }}"
+                {% endif %}
                 >{{ item.name[page.language] }}</a
               >
               {% endif %}
