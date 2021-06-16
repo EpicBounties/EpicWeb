@@ -4,14 +4,11 @@
 - [x] Browser locale auto-detection
 - [x] Blog
 - [x] Atom feed for news
-- [ ] Mailchimp
+- [x] Mailchimp
 - [x] Google Analytics
 - [x] Modal video
 
 ## Tasks
-### TODO
-- Set up Mailchimp
-
 ### Done
 - Refactored site into Jekyll structure (layouts, includes, sass and data)
 - Refactored custom JS
@@ -31,4 +28,9 @@
 - Wrote news post layout
 - Make news mockup on home real
 - Set up Atom feed for news
+- Set up Mailchimp
+- Wrote 404 page
+- Deployed to Github Pages
+- Wrote documentation
 - Formatted code with Prettier
+- Fixed problems with site HTML/CSS
