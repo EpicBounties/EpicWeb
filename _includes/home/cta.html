@@ -7,32 +7,34 @@
     <div class="row row-cta-content mx-auto">
       <div class="col">
         <div class="cta-content text-center ps-xl-5">
-          <img
-            class="
-              d-block d-lg-none
-              img-fluid img-rocket
-              ms-auto
-              mb-5 mb-xl-0
-              mx-auto
-              data-scroll
-            "
-            src="{{ "/assets/images/img-rocket@2x.png" | absolute_url }}"
-            alt=""
-          />
+          <img class=" d-block d-lg-none img-fluid img-rocket ms-auto mb-5
+          mb-xl-0 mx-auto data-scroll " src="{{
+          "/assets/images/img-rocket@2x.png" | absolute_url }}" alt="" />
           <h2 class="display-5 fw-semibold mb-4 pb-2">
             {{ site.data.home.cta.title[page.language] }}
           </h2>
-          <form class="row justify-content-sm-center">
-            <div class="col-sm-auto">
+          <form
+            class="row justify-content-sm-center"
+            action="{{site.mailchimp}}"
+            method="post"
+            novalidate
+          >
+            <div class="col-sm-auto mc-field-group">
               <input
                 type="email"
+                name="EMAIL"
+                id="mce-EMAIL"
                 class="form-control form-control-lg border-0 w-100"
                 placeholder="{{ site.data.home.cta.placeholder[page.language] }}"
+                autocomplete="on"
               />
             </div>
             <div class="col-sm-auto ps-md-0">
-              <button
+              <input
                 type="submit"
+                name="subscribe"
+                value="{{ site.data.home.cta.submit[page.language] }}"
+                id="mc-embedded-subscribe"
                 class="
                   btn btn-primary btn-primary-blue btn-lg
                   text-uppercase
@@ -41,21 +43,15 @@
                   px-4
                   w-100 w-sm-auto
                 "
-              >
-                {{ site.data.home.cta.submit[page.language] }}
-              </button>
+              />
+              </input>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <img
-      class="d-none d-lg-block img-rocket img-rocket-locomotive data-scroll"
-      src="{{ "/assets/images/img-rocket@2x.png" | absolute_url }}"
-      alt=""
-      data-scroll
-      data-scroll-delay="0.6"
-      data-scroll-speed="3"
-    />
+    <img class="d-none d-lg-block img-rocket img-rocket-locomotive data-scroll"
+    src="{{ "/assets/images/img-rocket@2x.png" | absolute_url }}" alt=""
+    data-scroll data-scroll-delay="0.6" data-scroll-speed="3" />
   </div>
 </section>

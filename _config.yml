@@ -12,6 +12,9 @@ url: ""
 # production
 #url: "https://www.epicbounties.com"
 
+# Integrations
+mailchimp: "" # put here mailchimp action url
+
 # Plugins
 plugins:
   - jekyll-feed
