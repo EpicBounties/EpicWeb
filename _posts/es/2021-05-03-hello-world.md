@@ -1,14 +1,10 @@
 ---
-title: Hello World
-description: This is a sample blog post.
-
+title: Hola Mundo
+description: Esta es una entrada de muestra.
 author: John Doe
 tags: [one, two, three]
-language: en
-ref: 001
-
-metaImage: /assets/images/img-post-feature-image-medium.jpg
-metaImageAlt: Test
+language: es
+image: img-post-feature-image-medium.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum erat nec diam congue, vitae rhoncus tortor laoreet. Curabitur consequat dui non metus blandit convallis. Duis in consectetur sapien. Ut varius, odio quis iaculis accumsan, est nibh sodales leo, eu convallis purus elit sit amet quam. Nunc at eros dui. Cras feugiat fermentum nisi, sit amet rutrum justo auctor at. Aliquam consequat orci odio. Vivamus et elementum ipsum. Curabitur pellentesque diam nec lorem imperdiet, sit amet molestie sapien viverra. Duis finibus, turpis non elementum dapibus, ipsum neque cursus eros, at aliquet nunc nulla et purus. Ut sagittis gravida dolor. Fusce justo enim, consequat sed sollicitudin lobortis, sodales vel nibh. Cras molestie accumsan turpis in pellentesque. Aenean dapibus dolor mattis est vulputate vestibulum.
 
