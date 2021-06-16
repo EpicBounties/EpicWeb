@@ -1,0 +1,56 @@
+<section
+  class="section-expert-hunters-rewards section-bg-hexa-wave-blue"
+  id="sectionExpertHuntersRewards"
+  data-scroll-section
+>
+  <div class="container">
+    <div class="row flex-lg-row-reverse align-items-center">
+      <div class="col-lg-6">
+        <img
+          class="d-block img-fluid img-epicbounties-cube ms-lg-4 mb-4 mb-lg-0"
+          srcset="
+            {{ "/assets/images/img-epicbounties-cube@2x.png" | absolute_url }} 2x,
+            {{ "/assets/images/img-epicbounties-cube.png" | absolute_url }} 1x
+          "
+          src="{{ "/assets/images/img-epicbounties-cube@2x.png" | absolute_url }}"
+          alt=""
+          data-scroll
+          data-scroll-speed="1"
+          data-scroll-target="#sectionExpertHuntersRewards"
+          data-scroll-delay="0.05"
+        />
+      </div>
+      <div class="col-text col-lg-6 col-xl-4 offset-xl-2 ps-xl-0">
+        <h2 class="fw-bold add-short-underline mb-4">
+          <span class="fw-light"
+            >{{ site.data.home.rewards.title-light[page.language] }}</span
+          >
+          {{ site.data.home.rewards.title-heavy[page.language] }}
+        </h2>
+        <p class="lead mb-4">
+          {{ site.data.home.rewards.text[page.language] }}
+        </p>
+        <div>
+          <button
+            class="
+              btn btn-secondary btn-lg btn-ver-video
+              text-uppercase
+              d-inline-flex
+              align-items-center
+            "
+            data-video-id="{{ site.data.home.rewards.video }}"
+          >
+            <span class="icon-wrapper me-2"
+              ><img
+                 src="{{ "/assets/images/icon-play-round-filled-blue.png" | absolute_url }}"
+                alt=""
+            /></span>
+            <span class="text-wrapper"
+              >{{ site.data.misc.watch-video[page.language] }}</span
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

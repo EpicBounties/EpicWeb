@@ -1,0 +1,78 @@
+  <section class="section-features" id="sectionBeneficios" data-scroll-section>
+    <div class="container" data-scroll>
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="display-5 fw-extra-bold mb-3">
+            {{ site.data.home.features.title[page.language] }}
+          </h2>
+          <p class="lead fw-medium mb-5">
+            {{ site.data.home.features.subtitle[page.language] }}
+          </p>
+        </div>
+      </div>
+      <div
+        class="
+          row row-cols-1 row-cols-md-2 row-cols-lg-4
+          text-center text-lg-start
+        "
+      >
+        <div class="feature col mb-4 mb-xl-0">
+          <div class="feature-icon">
+            <img src="{{ "/assets/images/icon-gears-152x152.png" | absolute_url }}" alt="gears icon" />
+          </div>
+          <h5 class="mb-3 fw-extra-bold">
+            {{ site.data.home.features.colA[page.language] }} 
+          </h5>
+          <p>
+            {{ site.data.home.features.colA-text[page.language] }}
+          </p>
+        </div>
+        <div class="feature col mb-4 mb-xl-0">
+          <div class="feature-icon">
+            <img src="{{ "/assets/images/icon-clock-152x152.png" | absolute_url }}" alt="clock icon" />
+          </div>
+          <h5 class="mb-3 fw-extra-bold">
+            {{ site.data.home.features.colB[page.language] }}
+          </h5>
+          <p>
+            {{ site.data.home.features.colB-text[page.language] }}
+          </p>
+        </div>
+        <div class="feature col mb-4 mb-xl-0">
+          <div class="feature-icon">
+            <img
+              src="{{ "/assets/images/icon-secure-152x152.png" | absolute_url }}"
+              alt="security icon"
+            />
+          </div>
+          <h5 class="mb-3 fw-extra-bold">
+            {{ site.data.home.features.colC[page.language] }}</h5>
+          <p>
+            {{ site.data.home.features.colC-text[page.language] }}</p>
+        </div>
+        <div class="feature col mb-4 mb-xl-0">
+          <div class="feature-icon">
+            <img
+              src="{{ "/assets/images/icon-growth-chart-152x152.png" | absolute_url }}"
+              alt="growth chart icon"
+            />
+          </div>
+          <h5 class="mb-3 fw-extra-bold">
+            {{ site.data.home.features.colD[page.language] }}
+          </h5>
+          <p>
+            {{ site.data.home.features.colD-text[page.language] }}          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center mt-4">
+          <a
+            href="#"
+            class="btn btn-primary btn-primary-blue btn-lg text-uppercase mb-3"
+            >{{ site.data.home.features.cta[page.language] }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+

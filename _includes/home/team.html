@@ -1,0 +1,105 @@
+<section class="section-our-team" data-scroll-section>
+  <div class="container container-for-swiper">
+    <div class="row">
+      <div class="col text-center">
+        <h2 class="display-5 fw-extra-bold mb-0 mb-lg-5">
+          {{ site.data.home.team.title[page.language] }}
+        </h2>
+
+        <!-- Swiper -->
+        <div
+          class="
+            swiper-container-wrapper
+            swiper-our-team-wrapper
+            swiper-outside-next-prev
+            position-relative
+            swiper-custom-round-nav
+          "
+        >
+          <div id="swiperOurTeam" class="swiper-container swiper-our-team">
+            <div class="swiper-wrapper">
+              {% for card in site.data.home.team.cards %}
+              <div class="swiper-slide">
+                <div class="card-wrapper">
+                  <div
+                    class="
+                      card card-team-profile
+                      d-flex
+                      flex-column flex-md-row
+                      align-items-center
+                      border-0
+                    "
+                  >
+                    <div class="profile-image-wrapper">
+                      <img
+                        class="img-fluid profile-image"
+                        src="{{ "/assets/images/" | absolute_url | append: card.image }}"
+                        alt=""
+                      />
+                    </div>
+                    <div class="card-body text-start">
+                      <h4 class="name fw-extra-bold lh-1 mb-0">
+                        {{ card.name }}
+                      </h4>
+                      <div class="job-title fw-medium mb-3">
+                        {{ card.title }}
+                      </div>
+                      <p class="mb-3">{{ card.text[page.language] }}</p>
+                      <ul class="list-socials list-unstyled d-flex mb-0">
+                        <li>
+                          <a
+                            class="
+                              d-flex
+                              align-items-center
+                              nav-link-social-twitter
+                            "
+                            href="{{ card.twitter }}"
+                            target="_blank"
+                            ><i class="bi-twitter mx-auto"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="
+                              d-flex
+                              align-items-center
+                              nav-link-social-youtube
+                            "
+                            href="{{ card.youtube }}"
+                            target="_blank"
+                            ><i class="bi-youtube mx-auto"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /.card.card-team-profile -->
+                </div>
+                <!-- /.card-wrapper -->
+              </div>
+              <!-- /.swiper-slide -->
+              {% endfor %}
+            </div>
+          </div>
+          <!-- /.swiper-container -->
+          <!-- Add Arrows -->
+          <div id="swiperOurTeam-next" class="swiper-button-next">
+            <img
+              class="icon-arrow-right"
+              src="{{ "/assets/images/icon-arrow-right-v2-blue.png" | absolute_url }}"
+              alt=""
+            />
+          </div>
+          <div id="swiperOurTeam-prev" class="swiper-button-prev">
+            <img
+              class="icon-arrow-right"
+              src="{{ "/assets/images/icon-arrow-left-v2-blue.png" | absolute_url }}"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- /.swiper-container-wrapper.swiper-our-team-wrapper -->
+      </div>
+    </div>
+  </div>
+</section>

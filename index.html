@@ -1,3 +1,13 @@
 ---
-    layout: landing
 ---
+
+<!DOCTYPE html>
+<html>
+  <script>
+  {% if site.baseurl != "" %}
+    window.location.replace("/{{ site.baseurl }}/en/home");
+  {% else %}
+    window.location.replace("/en/home");
+  {% endif %}
+  </script>
+</html>

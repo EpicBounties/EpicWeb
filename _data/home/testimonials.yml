@@ -1,0 +1,39 @@
+cards:
+-
+  title:
+    en: "Testimonios"
+    es: "Testimonios"
+  text:
+    en: "Lorem ipsum dolor t amet consectur aadtjipi scing elit
+         Qsque iaculis etapien condimittae suspit purus
+         placatudiss ullamcorper veibu lum pucatudiss
+         ullamcorper veibulum fpit purus placatudiss
+         ullamcorper veibu."
+    es: "Lorem ipsum dolor t amet consectur aadtjipi scing elit
+         Qsque iaculis etapien condimittae suspit purus
+         placatudiss ullamcorper veibu lum pucatudiss
+         ullamcorper veibulum fpit purus placatudiss
+         ullamcorper veibu."
+  person-name: "John Doe"
+  person-title: "CEO at Dummy Co."
+  img-big: "testimonials/big1.jpg"
+  img-avatar: "testimonials/profile1.jpg"
+-
+  title:
+    en: "Testimonios 2"
+    es: "Testimonios 2"
+  text:
+    en: "Lorem ipsum dolor t amet consectur aadtjipi scing elit
+         Qsque iaculis etapien condimittae suspit purus
+         placatudiss ullamcorper veibu lum pucatudiss
+         ullamcorper veibulum fpit purus placatudiss
+         ullamcorper veibu."
+    es: "Lorem ipsum dolor t amet consectur aadtjipi scing elit
+         Qsque iaculis etapien condimittae suspit purus
+         placatudiss ullamcorper veibu lum pucatudiss
+         ullamcorper veibulum fpit purus placatudiss
+         ullamcorper veibu."
+  person-name: "John Doe"
+  person-title: "CEO at Dummy Co."
+  img-big: "testimonials/big2.jpg"
+  img-avatar: "testimonials/profile2.jpg"

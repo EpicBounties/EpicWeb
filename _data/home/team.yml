@@ -1,0 +1,27 @@
+title:
+  en: "Our team"
+  es: "Nuestro equipo"
+
+cards:
+-
+  name: "John Deo"
+  title: "CEO, Founder Company"
+  image: "team/profile1.jpg"
+  twitter:
+  youtube:
+  text:
+    en: "Loream ipsufm dolor sfit ameafat consectetur adipisciang eflit.
+    Craas ullamcorper felis luctus eros semper, eget cursus dui ultricies."
+    es: "Loream ipsufm dolor sfit ameafat consectetur adipisciang eflit.
+    Craas ullamcorper felis luctus eros semper, eget cursus dui ultricies."
+-
+  name: "Jane Dane"
+  title: "CEO, Founder Company"
+  image: "team/profile2.jpg"
+  twitter:
+  youtube:
+  text:
+    en: "Loream ipsufm dolor sfit ameafat consectetur adipisciang eflit.
+    Craas ullamcorper felis luctus eros semper, eget cursus dui ultricies."
+    es: "Loream ipsufm dolor sfit ameafat consectetur adipisciang eflit.
+    Craas ullamcorper felis luctus eros semper, eget cursus dui ultricies."

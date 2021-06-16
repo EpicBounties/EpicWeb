@@ -1,60 +1,99 @@
-<!doctype html>
-<html lang="{{ page.lang }}">
+<header class="main-header bg-white" data-scroll-section>
+  <div class="container" data-scroll>
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand p-0 me-auto" href="/"
+          ><img
+            class="main-header-logo"
+            src="{{ "/assets/images/epicbounties-logo.png" | absolute_url }}"
+            alt="Epic Bounties"
+        /></a>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data[page.lang].meta.desc }}{% endif %}" />
-    <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Epic Bounties{% endif %}" />
-    <title>Epic Bounties | {% if page.title %}{{ page.title }}{% else %}{{ site.data[page.lang].meta.title }}{% endif %}</title>
-    {% feed_meta %}
+        <div class="dropdown dropdown-language-options order-xl-4">
+          <a
+            class="btn dropdown-toggle px-0 fw-normal"
+            href="#"
+            role="button"
+            id="dropdownLanguageOption"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {% if page.language == 'es' %}
+            <span class="flag-icon flag-icon-es me-2"></span>Español {% else %}
+            <span class="flag-icon flag-icon-gb me-2"></span>English {% endif %}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownLanguageOption">
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="langRedirect('es')"
+              >
+                <span class="flag-icon flag-icon-es me-2"></span>Español
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="langRedirect('en')"
+              >
+                <span class="flag-icon flag-icon-gb me-2"></span>English
+              </button>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="navbar-toggler hamburger hamburger--slider ms-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMainMenuContent"
+          aria-controls="navbarMainMenuContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
-    <link rel="stylesheet" href="{{ "/assets/css/preloader.css" | prepend: site.baseurl_root }}">
-    <link rel="stylesheet" href="{{ "/assets/css/stylesheet.css" | prepend: site.baseurl_root }}">
-    <link rel="icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl_root }}">
-</head>
-
-<body>
-  <div class="main-wrapper scroll-animations position-relative" data-scroll-container>
-    <header class="main-header bg-white" data-scroll-section>
-      <div class="container" data-scroll>
-        <nav class="navbar navbar-expand-xl navbar-light">
-          <div class="container-fluid px-0">
-            <a class="navbar-brand p-0 me-auto " href="{{ "/" | prepend: site.baseurl | append: page.lang | append: "/" }}{% if page.url contains "index.html" %}index.html{% endif %}"><img class="main-header-logo" src="{{ "/assets/images/epicbounties-logo.png" | prepend: site.baseurl_root }}" alt="Epic Bounties"></a>
-
-            <!--
-          Language Options
-           - flag icons uses https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css
-           - its github page is https://github.com/lipis/flag-icon-css/blob/master/css/flag-icon.css
-          -->
-            <div class="dropdown dropdown-laguange-options order-xl-4">
-              <a class="btn dropdown-toggle px-0 fw-normal" href="#" role="button" id="dropdownLanguageOption" data-bs-toggle="dropdown" aria-expanded="false"><span class="flag-icon flag-icon-es me-2"></span>Español</a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownLanguageOption">
-                <li><button class="dropdown-item" type="button" onclick="showLanguageOption(this)"><span class="flag-icon flag-icon-es me-2"></span>Español</button></li>
-                <li><button class="dropdown-item" type="button" onclick="showLanguageOption(this)"><span class="flag-icon flag-icon-gb me-2"></span>English</button></li><!--
-                <li><button class="dropdown-item" type="button" onclick="showLanguageOption(this)"><span class="flag-icon flag-icon-us me-2"></span>English</button></li>-->
-              </ul>
-            </div>
-            <button class="navbar-toggler hamburger hamburger--slider ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainMenuContent" aria-controls="navbarMainMenuContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarMainMenuContent">
-              <ul class="navbar-nav ms-xl-auto mb-2 mb-lg-0">
-                {% for item in site.data.navigation.docs[page.lang] %}
-                <li class="nav-item">
-                  <a class="nav-link fw-semibold text-uppercase" href="{{ "/" | prepend: site.baseurl | append: page.lang | append: "/" }}{% if page.url contains "index.html" or page.dir == "/blog/" %}{% if item.hash == true %}index.html{% else %}{% endif %}{% endif %}{{ item.url }}">{{ item.title }}</a>
-                </li>
-                {% endfor %}
-                <li class="nav-item nav-item-btn mt-3 mt-xl-0">
-                  <a class="nav-link text-uppercase btn btn-primary fw-semibold px-4 px-xl-3 d-inline-block" href="{{ page.lang | prepend: "/" | append: "/formulario-hunters.html" }}">{{ site.data[page.lang].footer.register }}</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarMainMenuContent">
+          <ul class="navbar-nav ms-xl-auto mb-2 mb-lg-0">
+            {% for item in site.data.nav %}
+            <li class="nav-item">
+              {% if item.cta == true %}
+              <a
+                class="
+                  nav-link
+                  text-uppercase
+                  btn btn-primary
+                  fw-semibold
+                  px-4 px-xl-3
+                  d-inline-block
+                "
+                {% if item.absolute == true %}
+                href="{{ item.url }}"
+                {% else %}
+                href="/{{ page.language }}{{ item.url }}"
+                {% endif %}
+                >{{ item.name[page.language] }}</a
+              >
+              {% else %}
+              <a
+                class="nav-link fw-semibold text-uppercase"
+                {% if item.absolute == true %}
+                href="{{ item.url }}"
+                {% else %}
+                href="/{{ page.language }}{{ item.url }}"
+                {% endif %}
+                >{{ item.name[page.language] }}</a
+              >
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
-    </header>
-    <main>
+    </nav>
+  </div>
+</header>

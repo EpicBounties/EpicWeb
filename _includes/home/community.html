@@ -1,0 +1,52 @@
+<section class="section-community-professionals" data-scroll-section>
+  <div class="container" data-scroll>
+    <div
+      class="
+        row row-cols-1 row-cols-md-2
+        justify-content-lg-between
+        position-relative
+        px-lg-5
+      "
+    >
+      <div
+        class="
+          feature
+          col-lg-4
+          offset-lg-1
+          pb-5 pb-md-0
+          px-4 px-md-5
+          text-center text-md-start
+        "
+      >
+        <div class="feature-icon mb-3">
+          <img
+            src="{{ "assets/images/icon-cummunity-blue-70@2x.png" | absolute_url }}"
+            alt="community icon"
+          />
+        </div>
+        <h3 class="fw-semibold mb-0">
+          {{ site.data.home.community.spanA[page.language] }}
+        </h3>
+      </div>
+      <div
+        class="
+          feature
+          col-lg-5
+          pt-5 pt-md-0
+          px-4 px-md-5
+          text-center text-md-start
+        "
+      >
+        <div class="feature-icon mb-3">
+          <img
+            src="{{ "/assets/images/icon-professional-blue-70@2x.png" | absolute_url }}"
+            alt="professional icon"
+          />
+        </div>
+        <h3 class="fw-semibold mb-0">
+          {{ site.data.home.community.spanB[page.language] }}
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>

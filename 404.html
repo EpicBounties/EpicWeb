@@ -1,0 +1,13 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+  <script>
+  {% if site.baseurl != "" %}
+    window.location.replace("/{{ site.baseurl }}/en/404");
+  {% else %}
+    window.location.replace("/en/404");
+  {% endif %}
+  </script>
+</html>

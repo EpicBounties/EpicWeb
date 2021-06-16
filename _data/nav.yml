@@ -1,0 +1,37 @@
+-
+  name:
+    en: "Community"
+    es: "Comunidad"
+  url: "/community"
+-
+  name:
+    en: "Companies"
+    es: "Empresas" 
+  url: "/business"
+-
+  name:
+    en: "MSSP"
+    es: "MSSP"
+  url: "/business"
+-
+  name:
+    en: "How it Works"
+    es: "Cómo funciona" 
+  url: "/home#sectionAcercaDeLaPlataforma"
+-
+  name:
+    en: "Advantages"
+    es: "Beneficios"
+  url: "/home#sectionBeneficios"
+-
+  name:
+    en: "News"
+    es: "Noticias"
+  url: "/news"
+-
+  name:
+    en: "Login"
+    es: "Acceder" 
+  url: "https://app.epicbounties.com/"
+  cta: true
+  absolute: true

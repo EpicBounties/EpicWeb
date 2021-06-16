@@ -1,4 +1,0 @@
-# Dejo pasar a todos los robots
-Sitemap: https://epicbounties.com/sitemap.xml
-User-agent: *
-Disallow: /index.html
