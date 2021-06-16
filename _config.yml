@@ -1,6 +1,11 @@
 # Meta
-title: "EpicBounties"
-description: "La Plataforma De Bug Bounty De Habla Hispana"
+title:
+  en: "EpicBounties"
+  es: "EpicBounties"
+description:
+  en: "La Plataforma De Bug Bounty De Habla Hispana"
+  es: "La Plataforma De Bug Bounty De Habla Hispana"
+
 baseurl: ""
 # dev
 url: ""
