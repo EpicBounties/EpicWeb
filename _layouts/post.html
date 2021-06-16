@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="blog-post section-gap">
+<section class="blog-post section-gap" data-scroll-section>
   <div class="details-body">
     <div class="container">
       <!-- HERO -->
@@ -16,7 +16,16 @@ layout: default
         <h1 id="post-title">{{ page.title | escape }}</h1>
         <p id="post-meta">
           <span id="post-date">on {{ page.date | date: "%b %-d, %Y" }}</span>
+        <p>
+        {% if pages.tag != "" %}
+        <p id="tag-list">
+          tags: [[
+          {% for tag in page.tags %}
+           {{ tag }}
+          {% endfor %}
+           ]]
         </p>
+        {% endif %}
       </div>
 
       <!-- CONTENT -->
