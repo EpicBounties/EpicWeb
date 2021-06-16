@@ -4,7 +4,7 @@ description: This is a sample blog post.
 
 author: John Doe
 tags: [one, two, three]
-lang: en
+language: en
 ref: 001
 
 metaImage: /assets/images/img-post-feature-image-medium.jpg
