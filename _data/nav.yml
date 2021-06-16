@@ -5,8 +5,8 @@
   url: "/community"
 -
   name:
-    en: "Business"
-    es: "Negocio" 
+    en: "Companies"
+    es: "Empresas" 
   url: "/business"
 -
   name:
@@ -30,7 +30,7 @@
   url: "/news"
 -
   name:
-    en: "Subscribe"
-    es: "Inscribirse" 
-  url: "/home#cta"
+    en: "Login"
+    es: "Acceder" 
+  url: "https://app.epicbounties.com/"
   cta: true
