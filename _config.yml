@@ -8,9 +8,9 @@ description:
 
 baseurl: ""
 # dev
-url: ""
+#url: ""
 # production
-#url: "https://www.epicbounties.com"
+url: "https://www.epicbounties.com"
 
 # Integrations
 mailchimp: "" # put here mailchimp action url
