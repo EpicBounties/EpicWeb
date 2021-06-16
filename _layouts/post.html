@@ -6,8 +6,10 @@ layout: default
   <div class="details-body">
     <div class="container">
       <!-- HERO -->
+      {% if page.image %}
       <div id="post-hero" style="background-image: url('{{ "/assets/images/news/" | absolute_url | append: page.image }}')">
       </div>
+      {% endif %}
 
       <!-- META -->
       <div class="post-header">
