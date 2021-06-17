@@ -24,13 +24,11 @@ $(document).ready(function () {
   }
 
   // Init Locomotive Scroll
-  window.addEventListener("load", function (event) {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]"),
-      smooth: true,
-    });
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
   });
-
+ 
   // Init OurTeam Carousel
   const swiperOurTeam = new Swiper("#swiperOurTeam", {
     slidesPerView: 2,
