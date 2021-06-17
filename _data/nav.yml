@@ -17,12 +17,14 @@
   name:
     en: "How it Works"
     es: "Cómo funciona" 
-  url: "/home#sectionAcercaDeLaPlataforma"
+  url: "#sectionAcercaDeLaPlataforma"
+  scroll: true
 -
   name:
     en: "Advantages"
     es: "Beneficios"
-  url: "/home#sectionBeneficios"
+  url: "#sectionBeneficios"
+  scroll: true
 -
   name:
     en: "News"
@@ -33,5 +35,5 @@
     en: "Login"
     es: "Acceder" 
   url: "https://app.epicbounties.com/"
-  cta: true
+  featured: true
   absolute: true
