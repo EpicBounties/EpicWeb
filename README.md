@@ -27,13 +27,18 @@ author: John Doe
 tags: [one, two, three]
 image: `filename.jpg` 
 language: es
+categories: es
+layout: post
 ---
 
 ```
+
 ### Hero
 - Put hero images on `assets/images/posts` and use `image: filename.jpg`.
 
 ### Multi-language
-- Use `language: es` or `language: en` on every post.
 - Put posts on the folders `_posts/en` and `_posts/es`.
-- For it to work they have to share the same filename.
+- Use `language: <language_short_code>`and `categories: <language_short_code>` on every post.
+- Files have to share the same filename.
+- Posts can have a single category that is the language property.
+- They can have any number of tags.
