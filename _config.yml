@@ -26,35 +26,36 @@ feed:
     - en
     - es
 
+# GH-PAGES do not support front matter defaults
 # Default scopes and values
-defaults:
-  -
-    scope:
-      path: "en/"
-    values:
-      language: "en"
-  -
-    scope:
-      path: "es/"
-    values:
-      language: "es"
-  -
-    scope:
-      path: "_posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: "_posts/en/"
-    values:
-      language: "en"
-      categories: "en"
-  -
-    scope:
-      path: "_posts/es/"
-    values:
-      language: "es"
-      categories: "es"
+# defaults:
+#   -
+#     scope:
+#       path: "en/"
+#     values:
+#       language: "en"
+#   -
+#     scope:
+#       path: "es/"
+#     value:
+#       language: "es"
+#   -
+#     scope:
+#       path: "_posts"
+#     values:
+#       layout: "post"
+#   -
+#     scope:
+#       path: "_posts/en/"
+#     values:
+#       language: "en"
+#       categories: "en"
+#   -
+#     scope:
+#       path: "_posts/es/"
+#     values:
+#       language: "es"
+#       categories: "es"
 
 # Pagination
 paginate: 12
