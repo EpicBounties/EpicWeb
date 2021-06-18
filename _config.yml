@@ -12,7 +12,7 @@ url: ""
 # production
 #url: "https://www.epicbounties.com"
 # redirect 404 to home
-redirect-not-found: true
+redirect-not-found: false
 
 # Integrations
 mailchimp: "" # put here mailchimp action url
