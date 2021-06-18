@@ -4,10 +4,18 @@
 <!DOCTYPE html>
 <html>
   <script>
-  {% if site.baseurl != "" %}
-    window.location.replace("/{{ site.baseurl }}/en/404");
+  {% if site.redirect-not-found == true %}
+    {% assign target = "home" %}
   {% else %}
-    window.location.replace("/en/404");
+    {% assign target = "404" %}
   {% endif %}
+
+  {% if site.baseurl != "" %}
+    {% assign prefix = site.baseurl | prepend: "/" %}
+  {% else %}
+    {% assign prefix = "" %}
+  {% endif %}
+
+  window.location.replace("{{ prefix }}/en/{{ target }}");
   </script>
 </html>
