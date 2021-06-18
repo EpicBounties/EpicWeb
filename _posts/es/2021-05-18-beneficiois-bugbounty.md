@@ -27,7 +27,7 @@ Los CISOS miden el éxito de sus programas evaluando el MTTR (Mean time to repai
 
 La media del presupuesto para un equipo de seguridad ronda unos 19 millones de dólares anuales en herramientas de ciberseguridad, sin tener la total seguridad de que esas herramientas funcionen. Hay posibilidades de estar utilizando una serie de herramientas que no se ajustan a su negocio, pagando de esta forma más por la seguridad. Y esto implica tanto gasto monetario como gastos en términos de tiempo. Consolidar los costes debería significar maximizar el impacto y la eficiencia de su esfuerzo. 
 
- ## Reducción del riesgo empresarial. 
+## Reducción del riesgo empresarial. 
 
 El objetivo general de cualquier CISO es la reducción del riesgo. Sin embargo, los CISOs luchan por medir algo que no ha sucedido, es decir, una brecha. Para poder medir la reducción del riesgo empresarial, los líderes de seguridad profundizan en la seguridad de sus productos y examinan: 
 
