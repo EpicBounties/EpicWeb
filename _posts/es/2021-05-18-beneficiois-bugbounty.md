@@ -1,6 +1,6 @@
 ---
-title: 5 formas en la que los CISOS obtienen beneficios en la seguridad impulsada por los investigadores independientes
-description: Esta es una entrada de muestra.
+title: 5 formas en la que los CISOS obtienen beneficios en la seguridad impulsada por los hunters
+description: Conoce los beneficios que pueden encontrar los CISOS con sus departamentos de seguridad gracias al trabajo de los hunters
 author: Lucía Herrero
 tags: [bugbounty, CISO, hunters]
 language: es
@@ -15,7 +15,7 @@ Es crucial pensar en la ciberseguridad como un elemento facilitador de negocio y
 
 Para poder cumplir todos estos requisitos y seguir el ritmo de la industria, las organizaciones y empresas de todo el mundo están invirtiendo en investigadores de ciberseguridad independientes como un componente clave en su estrategia de ciberseguridad. Viendo como las organizaciones aceleran la producción de activos digitales, extienden el teletrabajo y amplían su infraestructura en la nube, las superficies de posibles ataques se expanden y evolucionan a diario.  
 
-Con la seguridad impulsada gracias a los investigadores independientes, se puede aprovechar su extensa comunidad para poner a prueba sus habilidades y experiencia que ayuden a proteger sus activos digitales a medida que evolucionan. 
+Con la seguridad impulsada gracias a los hunters, se puede aprovechar su extensa comunidad para poner a prueba sus habilidades y experiencia que ayuden a proteger sus activos digitales a medida que evolucionan. 
 
 Citamos aquí 5 puntos clave de cómo los CISOS obtienen valor de este tipo de acciones: 
 
@@ -25,7 +25,7 @@ Los CISOS miden el éxito de sus programas evaluando el MTTR (Mean time to repai
 
 ## Consolidación del gasto  
 
-La media del presupuesto para un equipo de seguridad ronda unos 19 millones de dólares anuales en herramientas de ciberseguridad, sin tener la total seguridad de que esas herramientas funcionen. Hay posibilidades de estar utilizando una serie de herramientas que no se ajustan a su negocio, pagando de esta forma más por la seguridad. Y esto implica tanto gasto monetario como gastos en términos de tiempo. Consolidar los costes debería significar maximizar el impacto y la eficiencia de su esfuerzo. 
+Según Mckinsey Digital, la media del presupuesto para un equipo de seguridad ronda unos 19 millones de dólares anuales en herramientas de ciberseguridad, sin tener la total seguridad de que esas herramientas funcionen. Hay posibilidades de estar utilizando una serie de herramientas que no se ajustan a su negocio, pagando de esta forma más por la seguridad. Y esto implica tanto gasto monetario como gastos en términos de tiempo. Consolidar los costes debería significar maximizar el impacto y la eficiencia de su esfuerzo. 
 
 ## Reducción del riesgo empresarial. 
 
