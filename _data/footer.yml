@@ -1,9 +1,11 @@
 colA:
   en: "Business"
   es: "Negocio"
+
 colA-1:
   en: "Register"
   es: "Registrarse"
+
 colA-2:
   en: "Subscribe"
   es: "Inscribirse"
@@ -22,11 +24,11 @@ contact:
   en: "Contact"
   us: "Contacto"
 
-copyright: 
+copyright:
   en: "All Rights Reserved."
-  es: "All Rights Reserved." 
+  es: "All Rights Reserved."
 
-terms: 
+terms:
   en: "Terms and Conditions"
   es: "Terms and Conditions"
 
@@ -49,5 +51,9 @@ social:
   name: "twitch"
   url: "https://www.twitch.tv/epicbounties"
 -
-  name: "youtube" 
+  name: "youtube"
   url: "https://www.youtube.com/channel/UCTrE5C3LHstzzDLHhUNSwTw"
+
+-
+  name: "discord"
+  url: "https://discord.com/channels/760413513637953537"
