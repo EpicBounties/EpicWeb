@@ -1,5 +1,5 @@
 ---
-title: Webinar Aqui
+title: Webinar Julio 2021
 description: Webinar.
 author: Mario Parra
 tags: [webinar, bugbounty, epic]
