@@ -1,15 +1,15 @@
 title-light:
-  en: "El hunter"
+  en: "The hunter"
   es: "El hunter"
 title-heavy:
-  en: "recibe su recompensa por cada vulnerabilidad encontrada"
+  en: "is rewarded for every vulnerability found"
   es: "recibe su recompensa por cada vulnerabilidad encontrada"
 text:
-  en: "Si la vulnerabilidad es existente y validada con los requisitos del
-       programa el hunter recibe la recompensa correspodiente por su
-       trabajo. De esta manera la empresa sólo paga por las
-       vulnerabilidades encontradas, y el hunter recibe su recompensa
-       adecuada al éxito de su participación en el programa."
+  en: "If the vulnerability exists and has been validated with the requirements of the
+       the hunter receives the corresponding reward for his work.
+       work. In this way the company only pays for the
+       vulnerabilities found, and the hunter is rewarded according to the success of his
+       appropriate to the success of his participation in the programme."
   es: "Si la vulnerabilidad es existente y validada con los requisitos del
        programa el hunter recibe la recompensa correspodiente por su
        trabajo. De esta manera la empresa sólo paga por las
