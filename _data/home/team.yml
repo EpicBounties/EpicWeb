@@ -4,24 +4,39 @@ title:
 
 cards:
 -
-  name: "John Deo"
-  title: "CEO, Founder Company"
-  image: "team/profile1.jpg"
+  name: "Mario Parra"
+  title: "CTO"
+  image: "team/mario.png"
   twitter:
   youtube:
   text:
-    en: "Loream ipsufm dolor sfit ameafat consectetur adipisciang eflit.
-    Craas ullamcorper felis luctus eros semper, eget cursus dui ultricies."
-    es: "Loream ipsufm dolor sfit ameafat consectetur adipisciang eflit.
-    Craas ullamcorper felis luctus eros semper, eget cursus dui ultricies."
+    en: "Chief technology officer of epicbounties, passionate about technology."
+    es: "Jefe de tecnología de epicbounties, apasionado de la tecnología."
 -
-  name: "Jane Dane"
-  title: "CEO, Founder Company"
-  image: "team/profile2.jpg"
+  name: "Adolfo Coronado"
+  title: "Financial Controller"
+  image: "team/adolfo.png"
   twitter:
   youtube:
   text:
-    en: "Loream ipsufm dolor sfit ameafat consectetur adipisciang eflit.
-    Craas ullamcorper felis luctus eros semper, eget cursus dui ultricies."
-    es: "Loream ipsufm dolor sfit ameafat consectetur adipisciang eflit.
-    Craas ullamcorper felis luctus eros semper, eget cursus dui ultricies."
+    en: "Projects of various kinds where I am in charge of monitoring the Business Plan, Budget and other strategic areas of the different businesses. Cost analysis, project feasibility, purchase control, etc."
+    es: "Proyectos de diversa índole donde estoy al frente de seguimiento del Business Plan, Presupuesto y otras áreas estratégicas de los diferentes negocios. Análisis de costes, viabilidad de proyectos, control de compras, etc"
+-
+  name: "Antonio Lopez"
+  title: "COO, Co-founder"
+  image: "team/antonio.png"
+  twitter:
+  youtube:
+  text:
+    en: "Founding partner"
+    es: "Socio fundador"
+-
+  name: "Raquel Guirado"
+  title: "Marketing Manager"
+  image: "team/raquel.png"
+  twitter:
+  youtube:
+  text:
+    en: "Leading the Marketing area with a great team"
+    es: "Liderando el área de Marketing con un gran equipo"
+-
