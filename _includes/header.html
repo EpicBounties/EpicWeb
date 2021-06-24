@@ -2,8 +2,12 @@
   <div class="container" data-scroll>
     <nav class="navbar navbar-expand-xl navbar-light">
       <div class="container-fluid px-0">
-        <a class="navbar-brand p-0 me-auto" href="/"
-          ><img
+        {% if page.language == 'es' %}
+          <a class="navbar-brand p-0 me-auto" href="/{{ page.language }}/">
+        {% else %}
+          <a class="navbar-brand p-0 me-auto" href="/">
+        {% endif %}
+        <img
             class="main-header-logo"
             src="{{ "/assets/images/epicbounties-logo.png" | absolute_url }}"
             alt="Epic Bounties"
