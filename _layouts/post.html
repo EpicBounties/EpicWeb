@@ -20,9 +20,10 @@ layout: default
         {% if pages.tag != "" %}
         <p id="tag-list">
           tags: [[
-          {% for tag in page.tags %}
-           {{ tag }}
-          {% endfor %}
+            {% for tag in page.tags %}
+              {% capture tag_name %}{{ tag }}{% endcapture %}
+                <a href="{{ site.baseurl }}/{{ page.language }}/tags/{{ tag }}">{{ tag }}</a>
+            {% endfor %}
            ]]
         </p>
         {% endif %}
