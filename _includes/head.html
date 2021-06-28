@@ -11,4 +11,8 @@
 
   <!-- CSS -->
   <link href="{{ "/assets/css/main.css" | absolute_url }}" rel="stylesheet" />
+
+  {% if site.tags != "" %}
+    {% include collecttags.html %}
+  {% endif %}
 </head>
