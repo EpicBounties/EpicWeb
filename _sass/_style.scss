@@ -1609,7 +1609,6 @@ section {
 }
 
 #post-hero {
-  background-position: 100% center;
   background-size: cover;
   border-radius: 30px;
   height: 35vh;
@@ -1617,6 +1616,8 @@ section {
   @media (max-width: 900px) {
     display: none;
   }
+  object-fit: cover;
+  width: 100%;
 }
 
 #page-not-found {
