@@ -7,7 +7,7 @@ cards:
   name: "Mario Parra"
   title: "CTO"
   image: "team/mario.png"
-  twitter:
+  twitter: https://twitter.com/MPAlonso_
   youtube:
   text:
     en: "Chief technology officer of epicbounties, passionate about technology."
@@ -30,6 +30,17 @@ cards:
   text:
     en: "Entrepreneur and passionate about technology and cybersecurity"
     es: "Emprendedor y apasionado por la tecnología y ciberseguridad"
+
+-
+  name: "Jaime Restrepo"
+  title: "Bussines Partner"
+  image: "team/jaime.png"
+  twitter: "https://twitter.com/DragonJAR"
+  youtube: "https://www.youtube.com/channel/UCKJRgbppplC_qovKRPP2y7g"
+  text:
+    en: "Estrategic innovation and community advisor"
+    es: "Asesor estratégico de inovación y comunidad"
+
 -
   name: "Raquel Guirado"
   title: "Marketing Manager"
