@@ -22,14 +22,12 @@ layout: default
         <p id="tag-list">
           tags: [[
             {% for tag in page.tags %}
-              {% capture tag_name %}{{ tag }}{% endcapture %}
-                <a href="{{ site.baseurl }}/{{ page.language }}/tags/{{ tag }}">{{ tag }}</a>
+              <a href="/{{ page.language }}/tags/tag-page.html?tag={{ tag }}" >{{ tag }}</a>
             {% endfor %}
            ]]
         </p>
         {% endif %}
       </div>
-
       <!-- CONTENT -->
       <div class="post-content">{{ content }}</div>
 
