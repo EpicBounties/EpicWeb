@@ -1,6 +1,6 @@
 ---
 title: Webinar Julio 2021
-description: Inscríbete en nuestro próximo webinar, la presentación oficial de EpiBounties con su equipo.
+description: Webinar.
 author: Mario Parra
 tags: [webinar, bugbounty, epic]
 language: es
