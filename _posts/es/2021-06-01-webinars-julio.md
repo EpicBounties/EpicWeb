@@ -9,10 +9,9 @@ layout: post
 image: image1.jpg
 ---
 
+Inscríbete en nuestro próximo webinar, la presentación oficial de EpiBounties con su equipo.
+
 EpicBounties ha llegado un acuerdo de colaboración con la comunidad de DragonJAR, este acuerdo permitirá a EpicBounties ofrecer a los clientes de la plataforma toda la comunidad DragonJAR que cuenta con alrededor de 400 mil miembros de países hispanohablantes.
-
-
-
    
 Asiste a la presentación oficial de EpicBounties, la plataforma de bug bounty de habla hispana, donde hablaremos de las ventajas de este nuevo modelo acompañados de Jaime Restrepo (DragonJAR) uno de los referentes del mundo del bug bounty y en el que explicaremos como este nuevo paradigma ha adquirido una posición relevante para proporcionar una visión más profunda de la seguridad. 
 
