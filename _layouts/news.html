@@ -20,7 +20,9 @@ layout: default
         <div class="post-date d-inline-block fw-semibold mb-3">
           {{ post.date | date: "%b %-d, %Y" }}
         </div>
-        <h5 class="post-title fw-semibold mb-2 pb-1">{{ post.title }}</h5>
+        <h5 class="post-title fw-semibold mb-2 pb-1">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h5>
         <p class="card-text mb-2">
           {%- if post.excerpt -%} {{ post.excerpt }} {%- else -%} {{
           post.content | strip_html | truncatewords: '40' | append: "..." }} {%-
