@@ -3,12 +3,10 @@ layout: default
 ---
 
 <div class="container" id="news-container" data-scroll-section>
-  <div id="lang" ></div>
   {% assign langs = page.url | split: '/' %}
   {% assign lang = langs[1] %}
   <h1 id="news-page-title" class="fw-bold add-short-underline">{{ page.tag }}</h1>
   <div class="row" id="news-roll">
-
     {% assign i = 0 %}
     {% assign post_tags = site.tags[page.tag] | where: "language", lang %}
     {% for post in post_tags %}
