@@ -6,7 +6,7 @@ tags: [bugbounty, CISO, hunters]
 language: es
 categories: es
 layout: post
-image: image2.jpg
+image: img4.jpg
 ---
 
 Antes de la situación vivida por la pandemia, las empresas solían pensar que la seguridad de sus servicios y sistemas estaban a salvo sin problema. Ahora mismo, al haberse establecido el teletrabajo como modalidad posible para los trabajadores en las empresas, cada entidad cuenta con menos supervisión física de los dispositivos y herramientas que utilizan. 
