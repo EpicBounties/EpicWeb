@@ -8,7 +8,6 @@ categories: en
 layout: post
 image: image1.jpg
 ---
-Mario Parra
 
 EpicBounties has reached a collaboration agreement with the DragonJAR community, this agreement will allow EpicBounties to offer customers of the platform the entire DragonJAR community that has about 400 thousand members from Spanish-speaking countries.
 
