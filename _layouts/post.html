@@ -16,15 +16,18 @@ layout: default
       <div class="post-header">
         <h1 id="post-title">{{ page.title | escape }}</h1>
         <p id="post-meta">
+          <span id="post-date" class="fw-bolder">by {{ page.author }}</span>
+        </p>
+        <p id="post-meta">
           <span id="post-date">on {{ page.date | date: "%b %-d, %Y" }}</span>
-        <p>
+        </p>
         {% if pages.tag != "" %}
         <p id="tag-list">
-          tags: [[
+          tags:
             {% for tag in page.tags %}
-              <a href="/{{ page.language }}/tags/tag-page.html?tag={{ tag }}" >{{ tag }}</a>
+              {% capture tag_name %}{{ tag }}{% endcapture %}
+                <a href="{{ site.baseurl }}/{{ page.language }}/tags/{{ tag }}">{{ tag }}{% unless forloop.last %}<span>, </span>{% endunless %} </a>
             {% endfor %}
-           ]]
         </p>
         {% endif %}
       </div>
