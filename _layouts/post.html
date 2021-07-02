@@ -24,12 +24,10 @@ layout: default
         {% if pages.tag != "" %}
         <p id="tag-list">
           tags:
-            {% for tag in page.tags %}
-              {% capture tag_name %}{{ tag }}{% endcapture %}
-                <a href="{{ site.baseurl }}/{{ page.language }}/tags/{{ tag }}">{{ tag }}{% unless forloop.last %}<span>, </span>{% endunless %} </a>
-            {% endfor %}
+          <span id="tag_link"></span>
         </p>
         {% endif %}
+        {{ tagss }}
       </div>
       <!-- CONTENT -->
       <div class="post-content">{{ content }}</div>
@@ -70,3 +68,30 @@ layout: default
     </div>
   </div>
 </section>
+
+<script>
+  {% assign tags = page.tags | split: ',' %}
+  {% assign tags = tags | join: ',' %}
+  let tags = {{ tags }}
+  console.log('{{ tags }}')
+  console.log('{{ page.tags }}')
+  let tags_valid = []
+  for (let i = 0; i < tags.length; i++) {
+    if( (/[^0-9a-zA-Z]+/igm).test(tags[i]) == false){
+      tags_valid.push(tags[i])
+    }
+  }
+
+  // create link based on valid tags
+  for (let j = 0; j < tags_valid.length; j++) {
+    var tag_place = document.getElementById("tag_link");
+    var aTag = document.createElement('a');
+    aTag.setAttribute('href', '{{ site.baseurl }}'+"/"+'{{ page.language }}'+"/tags/tag-page.html?tag="+tags_valid[j]);
+    if (j == (tags_valid.length-1)) {
+      aTag.text = tags_valid[j];
+    }else {
+      aTag.text = tags_valid[j] + ", ";
+    }
+    tag_place.appendChild(aTag);
+  }
+</script>
