@@ -4,6 +4,15 @@ title:
 
 cards:
 -
+  name: "Jose Ramon Palancos"
+  title: "CEO"
+  image: "team/jose.png"
+  twitter: https://twitter.com/jpalanco
+  youtube:
+  text:
+    en: "Serial Cybersecurity entrepreneur and Researcher"
+    es: "Emprendedor e investigador de ciberseguridad"
+-
   name: "Mario Parra"
   title: "CTO"
   image: "team/mario.png"
