@@ -19,4 +19,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
       element.remove();
     }
   });
+
+  // redirect if invalid search params
+  let regex = /[^0-9a-zA-Z]+/igm
+  let params = urlParams.get('tag')
+  if ((regex).test(params) == true) {
+    let redirect =  document.location.origin + '/' + userLang + '/' + '404'
+    window.location.replace(redirect)
+  }
 });
